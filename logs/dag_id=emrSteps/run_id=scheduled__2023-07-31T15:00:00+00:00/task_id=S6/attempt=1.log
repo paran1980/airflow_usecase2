@@ -1,0 +1,36 @@
+[2023-07-31T16:31:51.452+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/sqlalchemy.py:124: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  return not conf.get("database", "sql_alchemy_conn").startswith("mssql")
+
+[2023-07-31T16:31:51.512+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: emrSteps.S6 scheduled__2023-07-31T15:00:00+00:00 [queued]>
+[2023-07-31T16:31:51.521+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: emrSteps.S6 scheduled__2023-07-31T15:00:00+00:00 [queued]>
+[2023-07-31T16:31:51.521+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-07-31T16:31:51.536+0000] {taskinstance.py:1327} INFO - Executing <Task(EmrAddStepsOperator): S6> on 2023-07-31 15:00:00+00:00
+[2023-07-31T16:31:51.543+0000] {standard_task_runner.py:57} INFO - Started process 86 to run task
+[2023-07-31T16:31:51.550+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'emrSteps', 'S6', 'scheduled__2023-07-31T15:00:00+00:00', '--job-id', '87', '--raw', '--subdir', 'DAGS_FOLDER/emrSteps.py', '--cfg-path', '/tmp/tmpdc_nnjj9']
+[2023-07-31T16:31:51.555+0000] {standard_task_runner.py:85} INFO - Job 87: Subtask S6
+[2023-07-31T16:31:51.570+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2023-07-31T16:31:51.610+0000] {task_command.py:410} INFO - Running <TaskInstance: emrSteps.S6 scheduled__2023-07-31T15:00:00+00:00 [running]> on host 484e6be077e8
+[2023-07-31T16:31:51.626+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/sqlalchemy.py:124: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  return not conf.get("database", "sql_alchemy_conn").startswith("mssql")
+
+[2023-07-31T16:31:51.706+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='emrSteps' AIRFLOW_CTX_TASK_ID='S6' AIRFLOW_CTX_EXECUTION_DATE='2023-07-31T15:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-07-31T15:00:00+00:00'
+[2023-07-31T16:31:51.738+0000] {base.py:73} INFO - Using connection ID 'aws_connection' for task execution.
+[2023-07-31T16:31:51.739+0000] {connection_wrapper.py:340} INFO - AWS Connection (conn_id='aws_connection', conn_type='aws') credentials retrieved from login and password.
+[2023-07-31T16:31:52.545+0000] {emr.py:145} INFO - Adding steps to j-3EO35D3IB9FCU
+[2023-07-31T16:31:52.565+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/providers/amazon/aws/operators/emr.py", line 152, in execute
+    step_ids = emr_hook.add_job_flow_steps(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/providers/amazon/aws/hooks/emr.py", line 163, in add_job_flow_steps
+    response = self.get_conn().add_job_flow_steps(JobFlowId=job_flow_id, Steps=steps, **config)
+  File "/home/airflow/.local/lib/python3.9/site-packages/botocore/client.py", line 530, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/botocore/client.py", line 964, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ValidationException) when calling the AddJobFlowSteps operation: A job flow that is shutting down, terminated, or finished may not be modified.
+[2023-07-31T16:31:52.573+0000] {taskinstance.py:1345} INFO - Marking task as FAILED. dag_id=emrSteps, task_id=S6, execution_date=20230731T150000, start_date=20230731T163151, end_date=20230731T163152
+[2023-07-31T16:31:52.585+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 87 for task S6 (An error occurred (ValidationException) when calling the AddJobFlowSteps operation: A job flow that is shutting down, terminated, or finished may not be modified.; 86)
+[2023-07-31T16:31:52.608+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-07-31T16:31:52.626+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

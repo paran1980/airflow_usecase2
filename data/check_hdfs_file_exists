@@ -1,0 +1,12 @@
+#!/bin/sh
+
+while true ; do
+        if  hdfs dfs -ls "$1" >> /dev/null 2>>/dev/null ; then
+                echo "File exist"
+                break;
+        else
+                echo "sleeping for 5 seconds"
+                sleep 5000
+        fi
+done
+

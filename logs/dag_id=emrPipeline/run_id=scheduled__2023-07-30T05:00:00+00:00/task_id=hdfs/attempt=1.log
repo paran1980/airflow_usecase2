@@ -1,0 +1,40 @@
+[2023-07-30T06:02:53.282+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/sqlalchemy.py:124: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  return not conf.get("database", "sql_alchemy_conn").startswith("mssql")
+
+[2023-07-30T06:02:53.540+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: emrPipeline.hdfs scheduled__2023-07-30T05:00:00+00:00 [queued]>
+[2023-07-30T06:02:53.584+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: emrPipeline.hdfs scheduled__2023-07-30T05:00:00+00:00 [queued]>
+[2023-07-30T06:02:53.585+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-07-30T06:02:53.619+0000] {taskinstance.py:1327} INFO - Executing <Task(WebHdfsSensor): hdfs> on 2023-07-30 05:00:00+00:00
+[2023-07-30T06:02:53.646+0000] {standard_task_runner.py:57} INFO - Started process 98 to run task
+[2023-07-30T06:02:53.653+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'emrPipeline', 'hdfs', 'scheduled__2023-07-30T05:00:00+00:00', '--job-id', '40', '--raw', '--subdir', 'DAGS_FOLDER/emr.py', '--cfg-path', '/tmp/tmpzmunnrxb']
+[2023-07-30T06:02:53.670+0000] {standard_task_runner.py:85} INFO - Job 40: Subtask hdfs
+[2023-07-30T06:02:53.697+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2023-07-30T06:02:53.820+0000] {task_command.py:410} INFO - Running <TaskInstance: emrPipeline.hdfs scheduled__2023-07-30T05:00:00+00:00 [running]> on host 5c02965f2dba
+[2023-07-30T06:02:53.851+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/sqlalchemy.py:124: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  return not conf.get("database", "sql_alchemy_conn").startswith("mssql")
+
+[2023-07-30T06:02:54.004+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='emrPipeline' AIRFLOW_CTX_TASK_ID='hdfs' AIRFLOW_CTX_EXECUTION_DATE='2023-07-30T05:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-07-30T05:00:00+00:00'
+[2023-07-30T06:02:54.020+0000] {web_hdfs.py:42} INFO - Poking for file hdfs:///user/hadoop/file.csv
+[2023-07-30T06:02:54.034+0000] {base.py:73} INFO - Using connection ID 'webhdfs_default' for task execution.
+[2023-07-30T06:02:54.035+0000] {webhdfs.py:75} INFO - Trying to connect to http://ec2-3-85-47-212.compute-1.amazonaws.com:50075
+[2023-07-30T06:02:54.035+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/sensors/base.py", line 225, in execute
+    raise e
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/sensors/base.py", line 212, in execute
+    poke_return = self.poke(context)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/providers/apache/hdfs/sensors/web_hdfs.py", line 43, in poke
+    return hook.check_for_path(hdfs_path=self.filepath)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/providers/apache/hdfs/hooks/webhdfs.py", line 128, in check_for_path
+    conn = self.get_conn()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/providers/apache/hdfs/hooks/webhdfs.py", line 65, in get_conn
+    connection = self._find_valid_server()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/providers/apache/hdfs/hooks/webhdfs.py", line 77, in _find_valid_server
+    conn_check = host_socket.connect_ex((namenode, connection.port))
+socket.gaierror: [Errno -2] Name or service not known
+[2023-07-30T06:02:54.050+0000] {taskinstance.py:1345} INFO - Marking task as FAILED. dag_id=emrPipeline, task_id=hdfs, execution_date=20230730T050000, start_date=20230730T060253, end_date=20230730T060254
+[2023-07-30T06:02:54.075+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 40 for task hdfs ([Errno -2] Name or service not known; 98)
+[2023-07-30T06:02:54.087+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-07-30T06:02:54.159+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

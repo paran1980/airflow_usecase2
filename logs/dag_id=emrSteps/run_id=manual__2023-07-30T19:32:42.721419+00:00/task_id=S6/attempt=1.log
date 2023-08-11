@@ -1,0 +1,31 @@
+[2023-07-30T19:32:58.114+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: emrSteps.S6 manual__2023-07-30T19:32:42.721419+00:00 [queued]>
+[2023-07-30T19:32:58.122+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: emrSteps.S6 manual__2023-07-30T19:32:42.721419+00:00 [queued]>
+[2023-07-30T19:32:58.123+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-07-30T19:32:58.137+0000] {taskinstance.py:1327} INFO - Executing <Task(EmrAddStepsOperator): S6> on 2023-07-30 19:32:42.721419+00:00
+[2023-07-30T19:32:58.144+0000] {standard_task_runner.py:57} INFO - Started process 2475 to run task
+[2023-07-30T19:32:58.148+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'emrSteps', 'S6', 'manual__2023-07-30T19:32:42.721419+00:00', '--job-id', '68', '--raw', '--subdir', 'DAGS_FOLDER/emrSteps.py', '--cfg-path', '/tmp/tmpgdw55_5g']
+[2023-07-30T19:32:58.151+0000] {standard_task_runner.py:85} INFO - Job 68: Subtask S6
+[2023-07-30T19:32:58.163+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2023-07-30T19:32:58.200+0000] {task_command.py:410} INFO - Running <TaskInstance: emrSteps.S6 manual__2023-07-30T19:32:42.721419+00:00 [running]> on host 484e6be077e8
+[2023-07-30T19:32:58.273+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='emrSteps' AIRFLOW_CTX_TASK_ID='S6' AIRFLOW_CTX_EXECUTION_DATE='2023-07-30T19:32:42.721419+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-07-30T19:32:42.721419+00:00'
+[2023-07-30T19:32:58.294+0000] {base.py:73} INFO - Using connection ID 'aws_connection' for task execution.
+[2023-07-30T19:32:58.295+0000] {connection_wrapper.py:340} INFO - AWS Connection (conn_id='aws_connection', conn_type='aws') credentials retrieved from login and password.
+[2023-07-30T19:32:58.903+0000] {emr.py:145} INFO - Adding steps to j-3EO35D3IB9FCU
+[2023-07-30T19:32:59.010+0000] {emr.py:168} INFO - Steps ['s-08033133R7SKSF3OAAMQ'] added to JobFlow
+[2023-07-30T19:33:19.145+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/providers/amazon/aws/operators/emr.py", line 152, in execute
+    step_ids = emr_hook.add_job_flow_steps(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/providers/amazon/aws/hooks/emr.py", line 172, in add_job_flow_steps
+    waiter.wait(
+  File "/home/airflow/.local/lib/python3.9/site-packages/botocore/waiter.py", line 55, in wait
+    Waiter.wait(self, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/botocore/waiter.py", line 388, in wait
+    raise WaiterError(
+botocore.exceptions.WaiterError: Waiter StepComplete failed: Max attempts exceeded
+[2023-07-30T19:33:19.153+0000] {taskinstance.py:1345} INFO - Marking task as FAILED. dag_id=emrSteps, task_id=S6, execution_date=20230730T193242, start_date=20230730T193258, end_date=20230730T193319
+[2023-07-30T19:33:19.168+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 68 for task S6 (Waiter StepComplete failed: Max attempts exceeded; 2475)
+[2023-07-30T19:33:19.224+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-07-30T19:33:19.242+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

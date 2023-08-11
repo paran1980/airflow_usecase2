@@ -1,0 +1,11 @@
+apache-airflow-providers-slack
+apache-airflow-providers-apache-spark==4.1.1
+apache-airflow-providers-apache-hdfs==4.1.0
+apache-airflow-providers-apache-hdfs==4.1.0
+itsdangerous
+email_validator
+Werkzeug
+flask
+pandahouse==0.2.7
+clickhouse-driver==0.2.1
+sqlalchemy==1.4.46

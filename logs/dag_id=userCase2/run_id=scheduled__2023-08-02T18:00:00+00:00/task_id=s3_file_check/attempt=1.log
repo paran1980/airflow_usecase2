@@ -1,0 +1,35 @@
+[2023-08-02T19:00:13.076+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/sqlalchemy.py:124: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  return not conf.get("database", "sql_alchemy_conn").startswith("mssql")
+
+[2023-08-02T19:00:13.131+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: userCase2.s3_file_check scheduled__2023-08-02T18:00:00+00:00 [queued]>
+[2023-08-02T19:00:13.140+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: userCase2.s3_file_check scheduled__2023-08-02T18:00:00+00:00 [queued]>
+[2023-08-02T19:00:13.141+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 3
+[2023-08-02T19:00:13.154+0000] {taskinstance.py:1327} INFO - Executing <Task(S3KeySensor): s3_file_check> on 2023-08-02 18:00:00+00:00
+[2023-08-02T19:00:13.162+0000] {standard_task_runner.py:57} INFO - Started process 5768 to run task
+[2023-08-02T19:00:13.166+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'userCase2', 's3_file_check', 'scheduled__2023-08-02T18:00:00+00:00', '--job-id', '113', '--raw', '--subdir', 'DAGS_FOLDER/userCase.py', '--cfg-path', '/tmp/tmpksilr_o9']
+[2023-08-02T19:00:13.175+0000] {standard_task_runner.py:85} INFO - Job 113: Subtask s3_file_check
+[2023-08-02T19:00:13.191+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2023-08-02T19:00:13.232+0000] {task_command.py:410} INFO - Running <TaskInstance: userCase2.s3_file_check scheduled__2023-08-02T18:00:00+00:00 [running]> on host 484e6be077e8
+[2023-08-02T19:00:13.243+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/sqlalchemy.py:124: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  return not conf.get("database", "sql_alchemy_conn").startswith("mssql")
+
+[2023-08-02T19:00:13.329+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='userCase2' AIRFLOW_CTX_TASK_ID='s3_file_check' AIRFLOW_CTX_EXECUTION_DATE='2023-08-02T18:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-08-02T18:00:00+00:00'
+[2023-08-02T19:00:13.330+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080/raw/movies.csv
+[2023-08-02T19:00:13.339+0000] {base.py:73} INFO - Using connection ID 'aws_connection' for task execution.
+[2023-08-02T19:00:13.340+0000] {connection_wrapper.py:340} INFO - AWS Connection (conn_id='aws_connection', conn_type='aws') credentials retrieved from login and password.
+[2023-08-02T19:00:23.939+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080/raw/movies.csv
+[2023-08-02T19:00:33.993+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080/raw/movies.csv
+[2023-08-02T19:00:44.073+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080/raw/movies.csv
+[2023-08-02T19:00:44.115+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/providers/amazon/aws/sensors/s3.py", line 141, in execute
+    super().execute(context)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/sensors/base.py", line 242, in execute
+    raise AirflowSensorTimeout(message)
+airflow.exceptions.AirflowSensorTimeout: Sensor has timed out; run duration of 30.784109866999643 seconds exceeds the specified timeout of 30.
+[2023-08-02T19:00:44.130+0000] {taskinstance.py:1345} INFO - Immediate failure requested. Marking task as FAILED. dag_id=userCase2, task_id=s3_file_check, execution_date=20230802T180000, start_date=20230802T190013, end_date=20230802T190044
+[2023-08-02T19:00:44.144+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 113 for task s3_file_check (Sensor has timed out; run duration of 30.784109866999643 seconds exceeds the specified timeout of 30.; 5768)
+[2023-08-02T19:00:44.181+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-08-02T19:00:44.211+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check
