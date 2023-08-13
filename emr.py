@@ -23,13 +23,35 @@ def _check_flag(**context):
     else:
         return "F1"
 
+#SPARK_STEPS = [
+#    {
+#        'Name': 'hive_task',
+#        'ActionOnFailure': 'CONTINUE',
+#        'HadoopJarStep': { 
+#            'Jar': 'command-runner.jar',              
+#            'Args':['bash', '-c','hive-script --run-hive-script --args -f s3://myawsbucket19080/hiveStep/script/my_taxi_updated.hql -d INPUT=s3://myawsbucket19080/hiveStep/inputData -d OUTPUT=s3://myawsbucket19080/hiveStep/output -d valid_time_stamp=10123456 -d author_name=paran']           
+#    },
+#    },
+#    {
+#      'Name': 'aggregate_task',
+#      'ActionOnFailure': 'CONTINUE',
+#      'HadoopJarStep': {
+#          'Jar': 'command-runner.jar',
+#          'Args': ['spark-submit','s3://myawsbucket19080/scripts/taxi_aggregate.py','s3://myawsbucket19080/hiveStep/output/','s3://myawsbucket19080/hiveStep/agg_output']
+#
+#    },
+#    }
+#]
+
+
+
 SPARK_STEPS = [
     {
         'Name': 'hive_task',
         'ActionOnFailure': 'CONTINUE',
-        'HadoopJarStep': { 
-            'Jar': 'command-runner.jar',              
-            'Args':['bash', '-c','hive-script --run-hive-script --args -f s3://myawsbucket19080/hiveStep/script/my_taxi_updated.hql -d INPUT=s3://myawsbucket19080/hiveStep/inputData -d OUTPUT=s3://myawsbucket19080/hiveStep/output -d valid_time_stamp=10123456 -d author_name=paran']           
+        'HadoopJarStep': {
+            'Jar': 'command-runner.jar',
+            'Args':['bash', '-c','hive-script --run-hive-script --args -f  {{ dag_run.conf["hiveql"] }}   -d INPUT={{ dag_run.conf["input_path"] }} -d OUTPUT={{ dag_run.conf["output_path"] }} -d valid_time_stamp={{ task_instance.xcom_pull(task_ids="copyFile", key="return_value") }} -d author_name={{ dag_run.conf["author_name"] }}']
     },
     },
     {
@@ -37,79 +59,10 @@ SPARK_STEPS = [
       'ActionOnFailure': 'CONTINUE',
       'HadoopJarStep': {
           'Jar': 'command-runner.jar',
-          'Args': ['spark-submit','s3://myawsbucket19080/scripts/taxi_aggregate.py','s3://myawsbucket19080/hiveStep/output/','s3://myawsbucket19080/hiveStep/agg_output']
-
+          'Args': ['spark-submit','{{ dag_run.conf["aggregate_script"] }}','{{ dag_run.conf["output_path"] }}','{{ dag_run.conf["aggregate_output"] }}','{{ task_instance.xcom_pull(task_ids="copyFile", key="return_value") }}']
     },
     }
 ]
-
-
-JOB_FLOW_OVERRIDES = {
-    "Name": "Movie review classifier",
-    "ReleaseLabel": "emr-6.12.0",
-    "Applications": [{"Name": "Hadoop"}, {"Name": "Spark"},{"Name": "Hive"}], # We want our EMR cluster to have HDFS and Spark
-    "Configurations": [
-        {
-            "Classification": "spark-env",
-            "Configurations": [
-                {
-                    "Classification": "export",
-                    "Properties": {"PYSPARK_PYTHON": "/usr/bin/python3"} # by default EMR uses py2, change it to py3
-                
-                },
-                {
-                   "Classification": "spark-hive-site",
-                   "Properties": {
-                   "hive.metastore.client.factory.class": "com.amazonaws.glue.catalog.metastore.AWSGlueDataCatalogHiveClientFactory"
-                                }
-                }
-
-            ],
-        }
-    ],
-    "Instances": {
-        "InstanceGroups": [
-            {
-                "Name": "Master node",
-                "Market": "SPOT",
-                "InstanceRole": "MASTER",
-                "InstanceType": "m4.xlarge",
-                "InstanceCount": 1,
-            },
-            {
-                "Name": "Core - 2",
-                "Market": "SPOT", # Spot instances are a "use as available" instances
-                "InstanceRole": "CORE",
-                "InstanceType": "m4.xlarge",
-                "InstanceCount": 2,
-            },
-        ],
-        "Ec2KeyName": "emr_key_pair",
-        "KeepJobFlowAliveWhenNoSteps": True,
-        "TerminationProtected": False, # this lets us programmatically terminate the cluster
-        "Ec2SubnetId": "subnet-0f8738060149dc7ca"
-    },
-    "JobFlowRole": "EMR_EC2_DefaultRole",
-    "ServiceRole": "EMR_DefaultRole",
-}
-
-
-#def validateFile(**kwargs):
-#    print("Reading the file")
-#    exitFlag=True
-#    os.environ['AWS_ACCESS_KEY_ID']= "{{ conn.aws_connection.login }}"
-#    os.environ['AWS_SECRET_ACCESS_KEY']= "{{ conn.aws_connection.paasword }}"
-#    os.environ['AWS_DEFAULT_REGION']= "{{ conn.aws_connection.region_name }}"
-#    s3= boto3.client("s3")
-#    obj = s3.get_object(Bucket="{{ dag_run.conf['s3_bucketName'] }}",Key="{{ dag_run.conf['s3_location'] }}")
-#    lines=obj['Body'].read().decode("utf-8")
-#    for line in lines.split("\n"):
-#        print(line)
-#        if len(line.split(",")) > 4:
-#            exitFlag=False
-#            break
-#        return exitFlag
-
 
 
 
@@ -181,9 +134,10 @@ def emrPipeline():
     s3_target_dir=${s3_target_dir}
     export AWS_ACCESS_KEY_ID="%s"
     export AWS_SECRET_ACCESS_KEY="%s"
-    fileName=$(/home/airflow/.local/bin/aws s3 ls s3://${s3_buckName}/${s3_source_dir}/ | sed -n 2p | awk '{ print $4 }')
+    #fileName=$(/home/airflow/.local/bin/aws s3 ls s3://${s3_buckName}/${s3_source_dir}/ | sed -n 2p | awk '{ print $4 }')
+    fileName=$(/home/airflow/.local/bin/aws s3 ls s3://${s3_buckName}/${s3_source_dir}/ --recursive|sort|tail -n 1 |awk '{ print $4 }' | awk -F "/" '{print $NF}')
     timeStamp=$(echo $fileName | awk -F "_"  '{ print $2}')
-    /home/airflow/.local/bin/aws s3 cp   s3://${s3_buckName}/${s3_source_dir}/$fileName   s3://${s3_buckName}/${s3_target_dir}/
+    /home/airflow/.local/bin/aws s3 cp   s3://${s3_buckName}/${s3_source_dir}/$fileName   s3://${s3_buckName}/${s3_target_dir}/${timeStamp}/
     echo $timeStamp
     """%(bash_env.get("AWS_ACCESS_KEY_ID"),bash_env.get("AWS_SECRET_ACCESS_KEY"))
 
@@ -229,42 +183,42 @@ def emrPipeline():
 
 
 
-#    create_emr_cluster = EmrCreateJobFlowOperator(
-#     task_id="create_emr_cluster",
-#     #job_flow_overrides=JOB_FLOW_OVERRIDES,
-#     aws_conn_id="aws_connection",
-#     emr_conn_id="EMR_Connection",
-#     wait_for_completion=True,
-#     waiter_max_attempts=100,
-#     waiter_countdown=10
-#
-#     )
-#
-#    step_adder =EmrAddStepsOperator(
-#        task_id='step_adder',
-#        job_flow_id="{{ task_instance.xcom_pull(task_ids='create_emr_cluster', key='return_value') }}",
-#        aws_conn_id='aws_connection',
-#        steps=SPARK_STEPS,
-#    )
-#
-#    step_checker_hive_task = EmrStepSensor(
-#    task_id='step_checker_hive_task',
-#    job_flow_id="{{ task_instance.xcom_pull(task_ids='create_emr_cluster', key='return_value') }}",
-#    step_id="{{ task_instance.xcom_pull(task_ids='step_adder', key='return_value')[0] }}",
-#    aws_conn_id='aws_connection',
-#    poke_interval= 10,
-#    timeout=200
-#    )
-#
-#    step_checker_agg_task = EmrStepSensor(
-#    task_id='step_checker_agg_task',
-#    job_flow_id="{{ task_instance.xcom_pull(task_ids='create_emr_cluster', key='return_value') }}",
-#    step_id="{{ task_instance.xcom_pull(task_ids='step_adder', key='return_value')[1] }}",
-#    aws_conn_id='aws_connection',
-#    poke_interval=10,
-#    timeout=200
-#    )
-#
+    create_emr_cluster = EmrCreateJobFlowOperator(
+     task_id="create_emr_cluster",
+     #job_flow_overrides=JOB_FLOW_OVERRIDES,
+     aws_conn_id="aws_connection",
+     emr_conn_id="EMR_Connection",
+     wait_for_completion=True,
+     waiter_max_attempts=100,
+     waiter_countdown=10
+
+     )
+
+    step_adder =EmrAddStepsOperator(
+        task_id='step_adder',
+        job_flow_id="{{ task_instance.xcom_pull(task_ids='create_emr_cluster', key='return_value') }}",
+        aws_conn_id='aws_connection',
+        steps=SPARK_STEPS,
+    )
+
+    step_checker_hive_task = EmrStepSensor(
+    task_id='step_checker_hive_task',
+    job_flow_id="{{ task_instance.xcom_pull(task_ids='create_emr_cluster', key='return_value') }}",
+    step_id="{{ task_instance.xcom_pull(task_ids='step_adder', key='return_value')[0] }}",
+    aws_conn_id='aws_connection',
+    poke_interval= 10,
+    timeout=200
+    )
+
+    step_checker_agg_task = EmrStepSensor(
+    task_id='step_checker_agg_task',
+    job_flow_id="{{ task_instance.xcom_pull(task_ids='create_emr_cluster', key='return_value') }}",
+    step_id="{{ task_instance.xcom_pull(task_ids='step_adder', key='return_value')[1] }}",
+    aws_conn_id='aws_connection',
+    poke_interval=10,
+    timeout=200
+    )
+
 #    cluster_remover = EmrTerminateJobFlowOperator(
 #        task_id='cluster_remover',
 #        job_flow_id="{{ task_instance.xcom_pull(task_ids='create_emr_cluster', key='return_value') }}",
@@ -274,6 +228,6 @@ def emrPipeline():
 #    )
 
     #S0 >> create_emr_cluster  >> step_adder >> [step_checker_hive_task , step_checker_agg_task ]>> cluster_remover
-    S0 >> s3_file_check >> validateFile >> renameFile >> copyFile 
-
+    #S0 >> s3_file_check >> validateFile >> renameFile >> copyFile >> create_emr_cluster  >> step_adder >> [step_checker_hive_task , step_checker_agg_task ]>> cluster_remover 
+    S0 >> s3_file_check >> validateFile >> renameFile >> copyFile >> create_emr_cluster  >> step_adder >> step_checker_hive_task >> step_checker_agg_task 
 dagemr=emrPipeline()

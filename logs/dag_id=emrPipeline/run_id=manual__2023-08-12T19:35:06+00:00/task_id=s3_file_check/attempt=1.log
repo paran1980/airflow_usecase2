@@ -1,0 +1,56 @@
+[2023-08-12T19:35:28.932+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: emrPipeline.s3_file_check manual__2023-08-12T19:35:06+00:00 [queued]>
+[2023-08-12T19:35:28.943+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: emrPipeline.s3_file_check manual__2023-08-12T19:35:06+00:00 [queued]>
+[2023-08-12T19:35:28.944+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 31
+[2023-08-12T19:35:28.959+0000] {taskinstance.py:1327} INFO - Executing <Task(S3KeySensor): s3_file_check> on 2023-08-12 19:35:06+00:00
+[2023-08-12T19:35:28.967+0000] {standard_task_runner.py:57} INFO - Started process 16353 to run task
+[2023-08-12T19:35:28.974+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'emrPipeline', 's3_file_check', 'manual__2023-08-12T19:35:06+00:00', '--job-id', '246', '--raw', '--subdir', 'DAGS_FOLDER/emr.py', '--cfg-path', '/tmp/tmp62z0lsui']
+[2023-08-12T19:35:28.977+0000] {standard_task_runner.py:85} INFO - Job 246: Subtask s3_file_check
+[2023-08-12T19:35:28.992+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2023-08-12T19:35:29.030+0000] {task_command.py:410} INFO - Running <TaskInstance: emrPipeline.s3_file_check manual__2023-08-12T19:35:06+00:00 [running]> on host 484e6be077e8
+[2023-08-12T19:35:29.117+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='emrPipeline' AIRFLOW_CTX_TASK_ID='s3_file_check' AIRFLOW_CTX_EXECUTION_DATE='2023-08-12T19:35:06+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-08-12T19:35:06+00:00'
+[2023-08-12T19:35:29.118+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:35:29.128+0000] {base.py:73} INFO - Using connection ID 'aws_connection' for task execution.
+[2023-08-12T19:35:29.129+0000] {connection_wrapper.py:340} INFO - AWS Connection (conn_id='aws_connection', conn_type='aws') credentials retrieved from login and password.
+[2023-08-12T19:35:39.740+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:35:49.801+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:35:59.851+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:36:09.890+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:36:19.960+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:36:30.020+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:36:40.061+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:36:50.120+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:37:00.170+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:37:10.211+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:37:20.251+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:37:30.361+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:37:40.521+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:37:50.795+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:38:00.891+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:38:11.074+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:38:21.210+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:38:31.329+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:38:41.482+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:38:51.644+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:39:01.810+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:39:12.047+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:39:22.151+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:39:32.330+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:39:42.420+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:39:52.654+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:40:02.795+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:40:12.997+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:40:23.041+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:40:33.090+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:40:33.132+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/providers/amazon/aws/sensors/s3.py", line 141, in execute
+    super().execute(context)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/sensors/base.py", line 242, in execute
+    raise AirflowSensorTimeout(message)
+airflow.exceptions.AirflowSensorTimeout: Sensor has timed out; run duration of 304.01376008500665 seconds exceeds the specified timeout of 300.
+[2023-08-12T19:40:33.141+0000] {taskinstance.py:1345} INFO - Immediate failure requested. Marking task as FAILED. dag_id=emrPipeline, task_id=s3_file_check, execution_date=20230812T193506, start_date=20230812T193528, end_date=20230812T194033
+[2023-08-12T19:40:33.154+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 246 for task s3_file_check (Sensor has timed out; run duration of 304.01376008500665 seconds exceeds the specified timeout of 300.; 16353)
+[2023-08-12T19:40:33.191+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-08-12T19:40:33.208+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

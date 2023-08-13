@@ -1,0 +1,36 @@
+[2023-08-13T10:21:51.605+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: emrPipeline.renameFile manual__2023-08-13T10:21:22+00:00 [queued]>
+[2023-08-13T10:21:51.614+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: emrPipeline.renameFile manual__2023-08-13T10:21:22+00:00 [queued]>
+[2023-08-13T10:21:51.614+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-08-13T10:21:51.630+0000] {taskinstance.py:1327} INFO - Executing <Task(BashOperator): renameFile> on 2023-08-13 10:21:22+00:00
+[2023-08-13T10:21:51.674+0000] {standard_task_runner.py:57} INFO - Started process 265 to run task
+[2023-08-13T10:21:51.685+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'emrPipeline', 'renameFile', 'manual__2023-08-13T10:21:22+00:00', '--job-id', '728', '--raw', '--subdir', 'DAGS_FOLDER/emr.py', '--cfg-path', '/tmp/tmpkxukdf2p']
+[2023-08-13T10:21:51.693+0000] {standard_task_runner.py:85} INFO - Job 728: Subtask renameFile
+[2023-08-13T10:21:51.722+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2023-08-13T10:21:51.774+0000] {task_command.py:410} INFO - Running <TaskInstance: emrPipeline.renameFile manual__2023-08-13T10:21:22+00:00 [running]> on host 484e6be077e8
+[2023-08-13T10:21:51.882+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='emrPipeline' AIRFLOW_CTX_TASK_ID='renameFile' AIRFLOW_CTX_EXECUTION_DATE='2023-08-13T10:21:22+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-08-13T10:21:22+00:00'
+[2023-08-13T10:21:51.884+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2023-08-13T10:21:51.885+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'sudo apt install awscli\ns3_buckName=${s3_bucketName}\ns3_location=${s3_location}\ns3_file_name_without_ext=${s3_location%.*}\ns3_file_ext=${s3_location: -4}\nexport AWS_ACCESS_KEY_ID=AKIAYJC6EOICLIH36STV\nexport AWS_SECRET_ACCESS_KEY=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\ntimestamp=20230813T102122\naws s3 mv  s3://${s3_buckName}/${s3_location}   s3://${s3_buckName}/${s3_file_name_without_ext}_${timestamp}_validated${s3_file_ext}']
+[2023-08-13T10:21:51.904+0000] {subprocess.py:86} INFO - Output:
+[2023-08-13T10:21:51.972+0000] {subprocess.py:93} INFO - 
+[2023-08-13T10:21:51.972+0000] {subprocess.py:93} INFO - We trust you have received the usual lecture from the local System
+[2023-08-13T10:21:51.973+0000] {subprocess.py:93} INFO - Administrator. It usually boils down to these three things:
+[2023-08-13T10:21:51.973+0000] {subprocess.py:93} INFO - 
+[2023-08-13T10:21:51.973+0000] {subprocess.py:93} INFO -     #1) Respect the privacy of others.
+[2023-08-13T10:21:51.973+0000] {subprocess.py:93} INFO -     #2) Think before you type.
+[2023-08-13T10:21:51.973+0000] {subprocess.py:93} INFO -     #3) With great power comes great responsibility.
+[2023-08-13T10:21:51.973+0000] {subprocess.py:93} INFO - 
+[2023-08-13T10:21:51.975+0000] {subprocess.py:93} INFO - sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+[2023-08-13T10:21:51.977+0000] {subprocess.py:93} INFO - sudo: a password is required
+[2023-08-13T10:21:51.978+0000] {subprocess.py:93} INFO - /bin/bash: line 9: aws: command not found
+[2023-08-13T10:21:51.978+0000] {subprocess.py:97} INFO - Command exited with return code 127
+[2023-08-13T10:21:51.994+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/bash.py", line 210, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 127.
+[2023-08-13T10:21:51.997+0000] {taskinstance.py:1345} INFO - Marking task as FAILED. dag_id=emrPipeline, task_id=renameFile, execution_date=20230813T102122, start_date=20230813T102151, end_date=20230813T102151
+[2023-08-13T10:21:52.012+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 728 for task renameFile (Bash command failed. The command returned a non-zero exit code 127.; 265)
+[2023-08-13T10:21:52.028+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-08-13T10:21:52.055+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

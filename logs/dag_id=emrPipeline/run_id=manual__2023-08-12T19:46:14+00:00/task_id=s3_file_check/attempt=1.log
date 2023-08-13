@@ -1,0 +1,29 @@
+[2023-08-12T19:46:55.015+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: emrPipeline.s3_file_check manual__2023-08-12T19:46:14+00:00 [queued]>
+[2023-08-12T19:46:55.024+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: emrPipeline.s3_file_check manual__2023-08-12T19:46:14+00:00 [queued]>
+[2023-08-12T19:46:55.024+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 31
+[2023-08-12T19:46:55.042+0000] {taskinstance.py:1327} INFO - Executing <Task(S3KeySensor): s3_file_check> on 2023-08-12 19:46:14+00:00
+[2023-08-12T19:46:55.050+0000] {standard_task_runner.py:57} INFO - Started process 16692 to run task
+[2023-08-12T19:46:55.057+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'emrPipeline', 's3_file_check', 'manual__2023-08-12T19:46:14+00:00', '--job-id', '253', '--raw', '--subdir', 'DAGS_FOLDER/emr.py', '--cfg-path', '/tmp/tmpjv3h0uso']
+[2023-08-12T19:46:55.060+0000] {standard_task_runner.py:85} INFO - Job 253: Subtask s3_file_check
+[2023-08-12T19:46:55.074+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2023-08-12T19:46:55.120+0000] {task_command.py:410} INFO - Running <TaskInstance: emrPipeline.s3_file_check manual__2023-08-12T19:46:14+00:00 [running]> on host 484e6be077e8
+[2023-08-12T19:46:55.221+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='emrPipeline' AIRFLOW_CTX_TASK_ID='s3_file_check' AIRFLOW_CTX_EXECUTION_DATE='2023-08-12T19:46:14+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-08-12T19:46:14+00:00'
+[2023-08-12T19:46:55.223+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:46:55.234+0000] {base.py:73} INFO - Using connection ID 'aws_connection' for task execution.
+[2023-08-12T19:46:55.235+0000] {connection_wrapper.py:340} INFO - AWS Connection (conn_id='aws_connection', conn_type='aws') credentials retrieved from login and password.
+[2023-08-12T19:47:05.831+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:47:15.880+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:47:25.981+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:47:36.205+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:47:46.360+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:47:56.591+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:48:06.720+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:48:16.944+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:48:27.046+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080//raw/movies.csv
+[2023-08-12T19:48:32.682+0000] {local_task_job_runner.py:291} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2023-08-12T19:48:32.698+0000] {process_utils.py:131} INFO - Sending Signals.SIGTERM to group 16692. PIDs of all processes in the group: [16692]
+[2023-08-12T19:48:32.698+0000] {process_utils.py:86} INFO - Sending the signal Signals.SIGTERM to group 16692
+[2023-08-12T19:48:32.698+0000] {taskinstance.py:1517} ERROR - Received SIGTERM. Terminating subprocesses.
+[2023-08-12T19:48:33.147+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=16692, status='terminated', exitcode=0, started='19:46:54') (16692) terminated with exit code 0

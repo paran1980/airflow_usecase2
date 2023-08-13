@@ -1,0 +1,27 @@
+[2023-08-12T21:45:09.401+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: emrPipeline.validate_file manual__2023-08-12T21:44:16+00:00 [queued]>
+[2023-08-12T21:45:09.419+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: emrPipeline.validate_file manual__2023-08-12T21:44:16+00:00 [queued]>
+[2023-08-12T21:45:09.419+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-08-12T21:45:09.439+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): validate_file> on 2023-08-12 21:44:16+00:00
+[2023-08-12T21:45:09.487+0000] {standard_task_runner.py:57} INFO - Started process 20344 to run task
+[2023-08-12T21:45:09.502+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'emrPipeline', 'validate_file', 'manual__2023-08-12T21:44:16+00:00', '--job-id', '395', '--raw', '--subdir', 'DAGS_FOLDER/emr.py', '--cfg-path', '/tmp/tmpe9oa9m6u']
+[2023-08-12T21:45:09.508+0000] {standard_task_runner.py:85} INFO - Job 395: Subtask validate_file
+[2023-08-12T21:45:09.533+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2023-08-12T21:45:09.580+0000] {task_command.py:410} INFO - Running <TaskInstance: emrPipeline.validate_file manual__2023-08-12T21:44:16+00:00 [running]> on host 484e6be077e8
+[2023-08-12T21:45:09.698+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='emrPipeline' AIRFLOW_CTX_TASK_ID='validate_file' AIRFLOW_CTX_EXECUTION_DATE='2023-08-12T21:44:16+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-08-12T21:44:16+00:00'
+[2023-08-12T21:45:09.700+0000] {logging_mixin.py:150} INFO - Reading the file
+[2023-08-12T21:45:09.728+0000] {base.py:73} INFO - Using connection ID 'aws_connection' for task execution.
+[2023-08-12T21:45:09.729+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/emr.py", line 133, in validateFile
+    os.environ['AWS_REGION']= conn._extra.region_name
+AttributeError: 'str' object has no attribute 'region_name'
+[2023-08-12T21:45:09.747+0000] {taskinstance.py:1345} INFO - Marking task as FAILED. dag_id=emrPipeline, task_id=validate_file, execution_date=20230812T214416, start_date=20230812T214509, end_date=20230812T214509
+[2023-08-12T21:45:09.783+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 395 for task validate_file ('str' object has no attribute 'region_name'; 20344)
+[2023-08-12T21:45:09.845+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-08-12T21:45:09.866+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

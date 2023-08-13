@@ -1,0 +1,36 @@
+[2023-08-12T20:37:12.386+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: emrPipeline.validate_file manual__2023-08-12T20:35:50+00:00 [queued]>
+[2023-08-12T20:37:12.397+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: emrPipeline.validate_file manual__2023-08-12T20:35:50+00:00 [queued]>
+[2023-08-12T20:37:12.397+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-08-12T20:37:12.422+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): validate_file> on 2023-08-12 20:35:50+00:00
+[2023-08-12T20:37:12.434+0000] {standard_task_runner.py:57} INFO - Started process 18208 to run task
+[2023-08-12T20:37:12.442+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'emrPipeline', 'validate_file', 'manual__2023-08-12T20:35:50+00:00', '--job-id', '298', '--raw', '--subdir', 'DAGS_FOLDER/emr.py', '--cfg-path', '/tmp/tmpv4iia6_c']
+[2023-08-12T20:37:12.445+0000] {standard_task_runner.py:85} INFO - Job 298: Subtask validate_file
+[2023-08-12T20:37:12.462+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2023-08-12T20:37:12.505+0000] {task_command.py:410} INFO - Running <TaskInstance: emrPipeline.validate_file manual__2023-08-12T20:35:50+00:00 [running]> on host 484e6be077e8
+[2023-08-12T20:37:12.605+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='emrPipeline' AIRFLOW_CTX_TASK_ID='validate_file' AIRFLOW_CTX_EXECUTION_DATE='2023-08-12T20:35:50+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-08-12T20:35:50+00:00'
+[2023-08-12T20:37:12.607+0000] {logging_mixin.py:150} INFO - Reading the file
+[2023-08-12T20:37:12.629+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/emr.py", line 125, in validateFile
+    s3= boto3.client("s3")
+  File "/home/airflow/.local/lib/python3.9/site-packages/boto3/__init__.py", line 92, in client
+    return _get_default_session().client(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/boto3/session.py", line 299, in client
+    return self._session.create_client(
+  File "/home/airflow/.local/lib/python3.9/site-packages/botocore/session.py", line 918, in create_client
+    region_name = self._resolve_region_name(region_name, config)
+  File "/home/airflow/.local/lib/python3.9/site-packages/botocore/session.py", line 1002, in _resolve_region_name
+    validate_region_name(region_name)
+  File "/home/airflow/.local/lib/python3.9/site-packages/botocore/utils.py", line 1271, in validate_region_name
+    raise InvalidRegionError(region_name=region_name)
+botocore.exceptions.InvalidRegionError: Provided region_name '{{ dag_run.conf['region_name'] }}' doesn't match a supported format.
+[2023-08-12T20:37:12.640+0000] {taskinstance.py:1345} INFO - Marking task as FAILED. dag_id=emrPipeline, task_id=validate_file, execution_date=20230812T203550, start_date=20230812T203712, end_date=20230812T203712
+[2023-08-12T20:37:12.652+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 298 for task validate_file (Provided region_name '{{ dag_run.conf['region_name'] }}' doesn't match a supported format.; 18208)
+[2023-08-12T20:37:12.691+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-08-12T20:37:12.710+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check
