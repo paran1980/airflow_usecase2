@@ -26,8 +26,8 @@ with DAG(dag_id="userCase2",schedule_interval="@hourly",start_date=pendulum.from
     def validateFile(**kwargs):
         print("Reading the file")
         exitFlag=True
-        os.environ['AWS_ACCESS_KEY_ID']="AKIAYJC6EOICLIH36STV"
-        os.environ['AWS_SECRET_ACCESS_KEY']="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"
+        os.environ['AWS_ACCESS_KEY_ID']="xxxxxxxxx"
+        os.environ['AWS_SECRET_ACCESS_KEY']="xxxxxxxx"
         os.environ['AWS_DEFAULT_REGION']="us-east-1"
         s3= boto3.client("s3")
         obj = s3.get_object(Bucket="myawsbucket19080",Key="raw/movies.csv")
