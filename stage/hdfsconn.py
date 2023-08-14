@@ -28,10 +28,10 @@ dag_execute_hdfs_commands = DAG(
 #Establish connection to HDFS
 conn =Connection(
          conn_id = 'webhdfs',
-         host='htpp://ec2-54-86-231-42.compute-1.amazonaws.com',
+         host='xxxxxxxxxxxxxxx',
         conn_type='HDFS',
-         login='AKIAYJC6EOICLIH36STV',
-         password='rdsScy41O8kXwPgwQXzryQKHmDZ+X2U8WbUagXZw',
+         login='xxxxxxxxxxxxxxx',
+         password='xxxxxxxxxxxxxxx',
          port='50070',
          )
 session = settings.Session()
