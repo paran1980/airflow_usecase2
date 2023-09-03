@@ -18,7 +18,17 @@ RUN apt-get install -y --no-install-recommends \
         lsb-release \
         sasl2-bin \
         sqlite3 \
-        unixodbc
+        unixodbc\
+        gzip
+
+
+
+RUN apt-get update && apt-get install -y zip 
+
+        
+RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" 
+RUN unzip  awscliv2.zip
+RUN ./aws/install -i /usr/local/aws -b /usr/local/bin/aws
 USER airflow
 RUN pip install "apache-airflow[apache-airflow-providers-slack,apache-airflow-providers-apache-spark,apache-airflow-providers-apache-hdfs,itsdangerous,email_validator,Werkzeug,flask,pandahouse,clickhouse-driver,sqlalchemy,airflow.providers.amazon,apache-airflow-providers-common-sql]==2.6.3" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.6.3/constraints-3.9.txt"
 RUN pip install apache-airflow-providers-apache-hdfs

@@ -1,7 +1,7 @@
 version: '3.5'
 x-airflow-common:
   &airflow-common
-  image: paran1980:0.1
+  image: paran1980:0.3
   environment:
     &airflow-common-env
     _AIRFLOW_WWW_USER_USERNAME: airflow
@@ -58,7 +58,7 @@ services:
   af-websrv:
     container_name: af-websrv
     <<: *airflow-common
-    image: paran1980:0.1
+    image: paran1980:0.3
     command: webserver
     ports:
       - 28080:8080
@@ -72,7 +72,7 @@ services:
   af-sch:
     container_name: af-sch
     <<: *airflow-common
-    image: paran1980:0.1
+    image: paran1980:0.3
     command: scheduler
     healthcheck:
       test: ["CMD-SHELL", 'airflow jobs check --job-type SchedulerJob --hostname "$${HOSTNAME}"']
@@ -84,7 +84,7 @@ services:
   af-w:
     container_name: af-w
     <<: *airflow-common
-    image: paran1980:0.1
+    image: paran1980:0.3
     command: celery worker
     healthcheck:
       test:
