@@ -1,0 +1,19 @@
+[2023-08-27T13:01:52.757+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ny_taxi_Pipeline.step_adder manual__2023-08-27T12:52:57+00:00 [queued]>
+[2023-08-27T13:01:52.777+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ny_taxi_Pipeline.step_adder manual__2023-08-27T12:52:57+00:00 [queued]>
+[2023-08-27T13:01:52.777+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-08-27T13:01:52.790+0000] {taskinstance.py:1327} INFO - Executing <Task(EmrAddStepsOperator): step_adder> on 2023-08-27 12:52:57+00:00
+[2023-08-27T13:01:52.797+0000] {standard_task_runner.py:57} INFO - Started process 3296 to run task
+[2023-08-27T13:01:52.806+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ny_taxi_Pipeline', 'step_adder', 'manual__2023-08-27T12:52:57+00:00', '--job-id', '1813', '--raw', '--subdir', 'DAGS_FOLDER/ny_taxi_datapipeline.py', '--cfg-path', '/tmp/tmpr8dzdgvt']
+[2023-08-27T13:01:52.809+0000] {standard_task_runner.py:85} INFO - Job 1813: Subtask step_adder
+[2023-08-27T13:01:52.826+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2023-08-27T13:01:52.869+0000] {task_command.py:410} INFO - Running <TaskInstance: ny_taxi_Pipeline.step_adder manual__2023-08-27T12:52:57+00:00 [running]> on host d4028c5ba2ac
+[2023-08-27T13:01:52.995+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ny_taxi_Pipeline' AIRFLOW_CTX_TASK_ID='step_adder' AIRFLOW_CTX_EXECUTION_DATE='2023-08-27T12:52:57+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-08-27T12:52:57+00:00'
+[2023-08-27T13:01:53.015+0000] {base.py:73} INFO - Using connection ID 'aws_connection' for task execution.
+[2023-08-27T13:01:53.016+0000] {connection_wrapper.py:340} INFO - AWS Connection (conn_id='aws_connection', conn_type='aws') credentials retrieved from login and password.
+[2023-08-27T13:01:53.597+0000] {emr.py:145} INFO - Adding steps to j-D2T1FPIUUEGP
+[2023-08-27T13:01:53.724+0000] {emr.py:168} INFO - Steps ['s-09485121CNCUKIBUMRKP', 's-0156524375HZM5TE7QKY'] added to JobFlow
+[2023-08-27T13:01:53.746+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=ny_taxi_Pipeline, task_id=step_adder, execution_date=20230827T125257, start_date=20230827T130152, end_date=20230827T130153
+[2023-08-27T13:01:53.782+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-08-27T13:01:53.810+0000] {taskinstance.py:2653} INFO - 2 downstream tasks scheduled from follow-on schedule check

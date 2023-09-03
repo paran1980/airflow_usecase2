@@ -1,0 +1,30 @@
+[2023-08-13T18:24:05.439+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: emrPipeline.create_emr_cluster manual__2023-08-13T18:21:18+00:00 [queued]>
+[2023-08-13T18:24:05.464+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: emrPipeline.create_emr_cluster manual__2023-08-13T18:21:18+00:00 [queued]>
+[2023-08-13T18:24:05.464+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-08-13T18:24:05.557+0000] {taskinstance.py:1327} INFO - Executing <Task(EmrCreateJobFlowOperator): create_emr_cluster> on 2023-08-13 18:21:18+00:00
+[2023-08-13T18:24:05.584+0000] {standard_task_runner.py:57} INFO - Started process 14064 to run task
+[2023-08-13T18:24:05.593+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'emrPipeline', 'create_emr_cluster', 'manual__2023-08-13T18:21:18+00:00', '--job-id', '1119', '--raw', '--subdir', 'DAGS_FOLDER/emr.py', '--cfg-path', '/tmp/tmp0bu7b18l']
+[2023-08-13T18:24:05.614+0000] {standard_task_runner.py:85} INFO - Job 1119: Subtask create_emr_cluster
+[2023-08-13T18:24:05.710+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2023-08-13T18:24:06.066+0000] {task_command.py:410} INFO - Running <TaskInstance: emrPipeline.create_emr_cluster manual__2023-08-13T18:21:18+00:00 [running]> on host 484e6be077e8
+[2023-08-13T18:24:06.582+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='emrPipeline' AIRFLOW_CTX_TASK_ID='create_emr_cluster' AIRFLOW_CTX_EXECUTION_DATE='2023-08-13T18:21:18+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-08-13T18:21:18+00:00'
+[2023-08-13T18:24:06.583+0000] {emr.py:700} INFO - Creating job flow using aws_conn_id: aws_connection, emr_conn_id: EMR_Connection
+[2023-08-13T18:24:06.638+0000] {base.py:73} INFO - Using connection ID 'EMR_Connection' for task execution.
+[2023-08-13T18:24:06.714+0000] {base.py:73} INFO - Using connection ID 'aws_connection' for task execution.
+[2023-08-13T18:24:06.714+0000] {connection_wrapper.py:340} INFO - AWS Connection (conn_id='aws_connection', conn_type='aws') credentials retrieved from login and password.
+[2023-08-13T18:24:12.180+0000] {emr.py:714} INFO - Job flow with id j-MOPIW4HJRHLZ created
+[2023-08-13T18:25:12.618+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/providers/amazon/aws/operators/emr.py", line 745, in execute
+    self._emr_hook.get_waiter("job_flow_waiting").wait(
+  File "/home/airflow/.local/lib/python3.9/site-packages/botocore/waiter.py", line 55, in wait
+    Waiter.wait(self, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/botocore/waiter.py", line 375, in wait
+    raise WaiterError(
+botocore.exceptions.WaiterError: Waiter job_flow_waiting failed: Waiter encountered a terminal failure state: For expression "Cluster.Status.State" we matched expected path: "TERMINATED_WITH_ERRORS"
+[2023-08-13T18:25:12.626+0000] {taskinstance.py:1345} INFO - Marking task as FAILED. dag_id=emrPipeline, task_id=create_emr_cluster, execution_date=20230813T182118, start_date=20230813T182405, end_date=20230813T182512
+[2023-08-13T18:25:12.642+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 1119 for task create_emr_cluster (Waiter job_flow_waiting failed: Waiter encountered a terminal failure state: For expression "Cluster.Status.State" we matched expected path: "TERMINATED_WITH_ERRORS"; 14064)
+[2023-08-13T18:25:12.661+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-08-13T18:25:12.687+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

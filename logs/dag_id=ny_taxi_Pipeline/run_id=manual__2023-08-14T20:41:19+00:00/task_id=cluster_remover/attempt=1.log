@@ -1,0 +1,19 @@
+[2023-08-14T20:52:21.969+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ny_taxi_Pipeline.cluster_remover manual__2023-08-14T20:41:19+00:00 [queued]>
+[2023-08-14T20:52:21.981+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ny_taxi_Pipeline.cluster_remover manual__2023-08-14T20:41:19+00:00 [queued]>
+[2023-08-14T20:52:21.981+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-08-14T20:52:21.995+0000] {taskinstance.py:1327} INFO - Executing <Task(EmrTerminateJobFlowOperator): cluster_remover> on 2023-08-14 20:41:19+00:00
+[2023-08-14T20:52:22.003+0000] {standard_task_runner.py:57} INFO - Started process 18471 to run task
+[2023-08-14T20:52:22.009+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ny_taxi_Pipeline', 'cluster_remover', 'manual__2023-08-14T20:41:19+00:00', '--job-id', '1723', '--raw', '--subdir', 'DAGS_FOLDER/ny_taxi_datapipeline.py', '--cfg-path', '/tmp/tmp5wb9cvg5']
+[2023-08-14T20:52:22.013+0000] {standard_task_runner.py:85} INFO - Job 1723: Subtask cluster_remover
+[2023-08-14T20:52:22.027+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2023-08-14T20:52:22.070+0000] {task_command.py:410} INFO - Running <TaskInstance: ny_taxi_Pipeline.cluster_remover manual__2023-08-14T20:41:19+00:00 [running]> on host d4028c5ba2ac
+[2023-08-14T20:52:22.256+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ny_taxi_Pipeline' AIRFLOW_CTX_TASK_ID='cluster_remover' AIRFLOW_CTX_EXECUTION_DATE='2023-08-14T20:41:19+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-08-14T20:41:19+00:00'
+[2023-08-14T20:52:22.277+0000] {base.py:73} INFO - Using connection ID 'aws_connection' for task execution.
+[2023-08-14T20:52:22.278+0000] {connection_wrapper.py:340} INFO - AWS Connection (conn_id='aws_connection', conn_type='aws') credentials retrieved from login and password.
+[2023-08-14T20:52:22.872+0000] {emr.py:901} INFO - Terminating JobFlow j-2EHJ0PSPP99C0
+[2023-08-14T20:52:22.954+0000] {emr.py:907} INFO - Terminating JobFlow with id j-2EHJ0PSPP99C0
+[2023-08-14T20:52:22.968+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=ny_taxi_Pipeline, task_id=cluster_remover, execution_date=20230814T204119, start_date=20230814T205221, end_date=20230814T205222
+[2023-08-14T20:52:23.020+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-08-14T20:52:23.038+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

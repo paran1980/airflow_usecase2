@@ -1,0 +1,50 @@
+[2023-08-14T11:05:19.290+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/sqlalchemy.py:124: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  return not conf.get("database", "sql_alchemy_conn").startswith("mssql")
+
+[2023-08-14T11:05:19.371+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: userCase2.s3_file_check scheduled__2023-08-14T10:00:00+00:00 [queued]>
+[2023-08-14T11:05:19.390+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: userCase2.s3_file_check scheduled__2023-08-14T10:00:00+00:00 [queued]>
+[2023-08-14T11:05:19.390+0000] {taskinstance.py:1308} INFO - Starting attempt 2 of 3
+[2023-08-14T11:05:19.417+0000] {taskinstance.py:1327} INFO - Executing <Task(S3KeySensor): s3_file_check> on 2023-08-14 10:00:00+00:00
+[2023-08-14T11:05:19.423+0000] {standard_task_runner.py:57} INFO - Started process 2129 to run task
+[2023-08-14T11:05:19.442+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'userCase2', 's3_file_check', 'scheduled__2023-08-14T10:00:00+00:00', '--job-id', '1245', '--raw', '--subdir', 'DAGS_FOLDER/userCase.py', '--cfg-path', '/tmp/tmp_548r_7b']
+[2023-08-14T11:05:19.445+0000] {standard_task_runner.py:85} INFO - Job 1245: Subtask s3_file_check
+[2023-08-14T11:05:19.484+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2023-08-14T11:05:19.567+0000] {task_command.py:410} INFO - Running <TaskInstance: userCase2.s3_file_check scheduled__2023-08-14T10:00:00+00:00 [running]> on host 484e6be077e8
+[2023-08-14T11:05:19.584+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/sqlalchemy.py:124: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  return not conf.get("database", "sql_alchemy_conn").startswith("mssql")
+
+[2023-08-14T11:05:19.795+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='userCase2' AIRFLOW_CTX_TASK_ID='s3_file_check' AIRFLOW_CTX_EXECUTION_DATE='2023-08-14T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-08-14T10:00:00+00:00'
+[2023-08-14T11:05:19.807+0000] {s3.py:103} INFO - Poking for key : s3://myawsbucket19080/raw/movies.csv
+[2023-08-14T11:05:19.823+0000] {base.py:73} INFO - Using connection ID 'aws_connection' for task execution.
+[2023-08-14T11:05:19.823+0000] {connection_wrapper.py:340} INFO - AWS Connection (conn_id='aws_connection', conn_type='aws') credentials retrieved from login and password.
+[2023-08-14T11:05:20.556+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/providers/amazon/aws/sensors/s3.py", line 141, in execute
+    super().execute(context)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/sensors/base.py", line 225, in execute
+    raise e
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/sensors/base.py", line 212, in execute
+    poke_return = self.poke(context)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/providers/amazon/aws/sensors/s3.py", line 134, in poke
+    return self._check_key(self.bucket_key)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/providers/amazon/aws/sensors/s3.py", line 122, in _check_key
+    obj = self.hook.head_object(key, bucket_name)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 146, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 94, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 768, in head_object
+    raise e
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 763, in head_object
+    return self.get_conn().head_object(Bucket=bucket_name, Key=key)
+  File "/home/airflow/.local/lib/python3.9/site-packages/botocore/client.py", line 535, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/botocore/client.py", line 980, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (403) when calling the HeadObject operation: Forbidden
+[2023-08-14T11:05:20.565+0000] {taskinstance.py:1345} INFO - Marking task as UP_FOR_RETRY. dag_id=userCase2, task_id=s3_file_check, execution_date=20230814T100000, start_date=20230814T110519, end_date=20230814T110520
+[2023-08-14T11:05:20.579+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 1245 for task s3_file_check (An error occurred (403) when calling the HeadObject operation: Forbidden; 2129)
+[2023-08-14T11:05:20.609+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-08-14T11:05:20.638+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

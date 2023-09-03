@@ -1,0 +1,48 @@
+[2023-08-14T20:49:46.907+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ny_taxi_Pipeline.step_checker_agg_task manual__2023-08-14T20:41:19+00:00 [queued]>
+[2023-08-14T20:49:47.099+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ny_taxi_Pipeline.step_checker_agg_task manual__2023-08-14T20:41:19+00:00 [queued]>
+[2023-08-14T20:49:47.100+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-08-14T20:49:47.386+0000] {taskinstance.py:1327} INFO - Executing <Task(EmrStepSensor): step_checker_agg_task> on 2023-08-14 20:41:19+00:00
+[2023-08-14T20:49:47.503+0000] {standard_task_runner.py:57} INFO - Started process 18380 to run task
+[2023-08-14T20:49:47.530+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ny_taxi_Pipeline', 'step_checker_agg_task', 'manual__2023-08-14T20:41:19+00:00', '--job-id', '1720', '--raw', '--subdir', 'DAGS_FOLDER/ny_taxi_datapipeline.py', '--cfg-path', '/tmp/tmpwocqwye3']
+[2023-08-14T20:49:47.562+0000] {standard_task_runner.py:85} INFO - Job 1720: Subtask step_checker_agg_task
+[2023-08-14T20:49:47.737+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2023-08-14T20:49:48.186+0000] {task_command.py:410} INFO - Running <TaskInstance: ny_taxi_Pipeline.step_checker_agg_task manual__2023-08-14T20:41:19+00:00 [running]> on host d4028c5ba2ac
+[2023-08-14T20:49:49.543+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ny_taxi_Pipeline' AIRFLOW_CTX_TASK_ID='step_checker_agg_task' AIRFLOW_CTX_EXECUTION_DATE='2023-08-14T20:41:19+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-08-14T20:41:19+00:00'
+[2023-08-14T20:49:49.607+0000] {base.py:73} INFO - Using connection ID 'aws_connection' for task execution.
+[2023-08-14T20:49:49.629+0000] {connection_wrapper.py:340} INFO - AWS Connection (conn_id='aws_connection', conn_type='aws') credentials retrieved from login and password.
+[2023-08-14T20:49:57.455+0000] {emr.py:544} INFO - Poking step s-04905613RPY71VCFR06C on cluster j-2EHJ0PSPP99C0
+[2023-08-14T20:49:58.587+0000] {emr.py:74} INFO - Job flow currently PENDING
+[2023-08-14T20:50:08.596+0000] {emr.py:544} INFO - Poking step s-04905613RPY71VCFR06C on cluster j-2EHJ0PSPP99C0
+[2023-08-14T20:50:08.696+0000] {emr.py:74} INFO - Job flow currently PENDING
+[2023-08-14T20:50:18.701+0000] {emr.py:544} INFO - Poking step s-04905613RPY71VCFR06C on cluster j-2EHJ0PSPP99C0
+[2023-08-14T20:50:18.804+0000] {emr.py:74} INFO - Job flow currently PENDING
+[2023-08-14T20:50:28.814+0000] {emr.py:544} INFO - Poking step s-04905613RPY71VCFR06C on cluster j-2EHJ0PSPP99C0
+[2023-08-14T20:50:28.961+0000] {emr.py:74} INFO - Job flow currently PENDING
+[2023-08-14T20:50:38.966+0000] {emr.py:544} INFO - Poking step s-04905613RPY71VCFR06C on cluster j-2EHJ0PSPP99C0
+[2023-08-14T20:50:39.081+0000] {emr.py:74} INFO - Job flow currently PENDING
+[2023-08-14T20:50:49.086+0000] {emr.py:544} INFO - Poking step s-04905613RPY71VCFR06C on cluster j-2EHJ0PSPP99C0
+[2023-08-14T20:50:49.246+0000] {emr.py:74} INFO - Job flow currently PENDING
+[2023-08-14T20:50:59.246+0000] {emr.py:544} INFO - Poking step s-04905613RPY71VCFR06C on cluster j-2EHJ0PSPP99C0
+[2023-08-14T20:50:59.340+0000] {emr.py:74} INFO - Job flow currently PENDING
+[2023-08-14T20:51:09.346+0000] {emr.py:544} INFO - Poking step s-04905613RPY71VCFR06C on cluster j-2EHJ0PSPP99C0
+[2023-08-14T20:51:09.440+0000] {emr.py:74} INFO - Job flow currently PENDING
+[2023-08-14T20:51:19.450+0000] {emr.py:544} INFO - Poking step s-04905613RPY71VCFR06C on cluster j-2EHJ0PSPP99C0
+[2023-08-14T20:51:19.552+0000] {emr.py:74} INFO - Job flow currently RUNNING
+[2023-08-14T20:51:29.556+0000] {emr.py:544} INFO - Poking step s-04905613RPY71VCFR06C on cluster j-2EHJ0PSPP99C0
+[2023-08-14T20:51:29.683+0000] {emr.py:74} INFO - Job flow currently RUNNING
+[2023-08-14T20:51:39.686+0000] {emr.py:544} INFO - Poking step s-04905613RPY71VCFR06C on cluster j-2EHJ0PSPP99C0
+[2023-08-14T20:51:39.797+0000] {emr.py:74} INFO - Job flow currently RUNNING
+[2023-08-14T20:51:49.806+0000] {emr.py:544} INFO - Poking step s-04905613RPY71VCFR06C on cluster j-2EHJ0PSPP99C0
+[2023-08-14T20:51:49.911+0000] {emr.py:74} INFO - Job flow currently RUNNING
+[2023-08-14T20:51:59.918+0000] {emr.py:544} INFO - Poking step s-04905613RPY71VCFR06C on cluster j-2EHJ0PSPP99C0
+[2023-08-14T20:52:00.025+0000] {emr.py:74} INFO - Job flow currently RUNNING
+[2023-08-14T20:52:10.026+0000] {emr.py:544} INFO - Poking step s-04905613RPY71VCFR06C on cluster j-2EHJ0PSPP99C0
+[2023-08-14T20:52:10.125+0000] {emr.py:74} INFO - Job flow currently RUNNING
+[2023-08-14T20:52:20.126+0000] {emr.py:544} INFO - Poking step s-04905613RPY71VCFR06C on cluster j-2EHJ0PSPP99C0
+[2023-08-14T20:52:20.230+0000] {emr.py:74} INFO - Job flow currently COMPLETED
+[2023-08-14T20:52:20.230+0000] {base.py:255} INFO - Success criteria met. Exiting.
+[2023-08-14T20:52:20.238+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=ny_taxi_Pipeline, task_id=step_checker_agg_task, execution_date=20230814T204119, start_date=20230814T204946, end_date=20230814T205220
+[2023-08-14T20:52:20.285+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-08-14T20:52:20.313+0000] {taskinstance.py:2653} INFO - 1 downstream tasks scheduled from follow-on schedule check

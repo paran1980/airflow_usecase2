@@ -1,0 +1,19 @@
+[2023-08-14T18:02:18.930+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: serial_parallel_data_pipeline.B0 manual__2023-08-14T18:01:20.569747+00:00 [queued]>
+[2023-08-14T18:02:18.939+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: serial_parallel_data_pipeline.B0 manual__2023-08-14T18:01:20.569747+00:00 [queued]>
+[2023-08-14T18:02:18.939+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-08-14T18:02:18.953+0000] {taskinstance.py:1327} INFO - Executing <Task(BranchPythonOperator): B0> on 2023-08-14 18:01:20.569747+00:00
+[2023-08-14T18:02:18.960+0000] {standard_task_runner.py:57} INFO - Started process 13243 to run task
+[2023-08-14T18:02:18.967+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'serial_parallel_data_pipeline', 'B0', 'manual__2023-08-14T18:01:20.569747+00:00', '--job-id', '1575', '--raw', '--subdir', 'DAGS_FOLDER/data_pipleline_serial_and_parallel.py', '--cfg-path', '/tmp/tmpknbex1q7']
+[2023-08-14T18:02:18.970+0000] {standard_task_runner.py:85} INFO - Job 1575: Subtask B0
+[2023-08-14T18:02:18.985+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2023-08-14T18:02:19.025+0000] {task_command.py:410} INFO - Running <TaskInstance: serial_parallel_data_pipeline.B0 manual__2023-08-14T18:01:20.569747+00:00 [running]> on host d4028c5ba2ac
+[2023-08-14T18:02:19.107+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='serial_parallel_data_pipeline' AIRFLOW_CTX_TASK_ID='B0' AIRFLOW_CTX_EXECUTION_DATE='2023-08-14T18:01:20.569747+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-08-14T18:01:20.569747+00:00'
+[2023-08-14T18:02:19.109+0000] {python.py:183} INFO - Done. Returned value was: F1
+[2023-08-14T18:02:19.109+0000] {python.py:216} INFO - Branch callable return F1
+[2023-08-14T18:02:19.109+0000] {skipmixin.py:164} INFO - Following branch F1
+[2023-08-14T18:02:19.110+0000] {skipmixin.py:224} INFO - Skipping tasks ['F0']
+[2023-08-14T18:02:19.168+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=serial_parallel_data_pipeline, task_id=B0, execution_date=20230814T180120, start_date=20230814T180218, end_date=20230814T180219
+[2023-08-14T18:02:19.217+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-08-14T18:02:19.257+0000] {taskinstance.py:2653} INFO - 1 downstream tasks scheduled from follow-on schedule check

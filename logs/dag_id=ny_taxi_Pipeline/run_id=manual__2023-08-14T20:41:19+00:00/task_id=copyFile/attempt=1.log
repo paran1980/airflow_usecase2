@@ -1,0 +1,21 @@
+[2023-08-14T20:42:02.597+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ny_taxi_Pipeline.copyFile manual__2023-08-14T20:41:19+00:00 [queued]>
+[2023-08-14T20:42:02.608+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ny_taxi_Pipeline.copyFile manual__2023-08-14T20:41:19+00:00 [queued]>
+[2023-08-14T20:42:02.608+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-08-14T20:42:02.624+0000] {taskinstance.py:1327} INFO - Executing <Task(BashOperator): copyFile> on 2023-08-14 20:41:19+00:00
+[2023-08-14T20:42:02.632+0000] {standard_task_runner.py:57} INFO - Started process 18147 to run task
+[2023-08-14T20:42:02.640+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ny_taxi_Pipeline', 'copyFile', 'manual__2023-08-14T20:41:19+00:00', '--job-id', '1714', '--raw', '--subdir', 'DAGS_FOLDER/ny_taxi_datapipeline.py', '--cfg-path', '/tmp/tmp3n4olr3f']
+[2023-08-14T20:42:02.650+0000] {standard_task_runner.py:85} INFO - Job 1714: Subtask copyFile
+[2023-08-14T20:42:02.670+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2023-08-14T20:42:02.735+0000] {task_command.py:410} INFO - Running <TaskInstance: ny_taxi_Pipeline.copyFile manual__2023-08-14T20:41:19+00:00 [running]> on host d4028c5ba2ac
+[2023-08-14T20:42:02.860+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ny_taxi_Pipeline' AIRFLOW_CTX_TASK_ID='copyFile' AIRFLOW_CTX_EXECUTION_DATE='2023-08-14T20:41:19+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-08-14T20:41:19+00:00'
+[2023-08-14T20:42:02.864+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2023-08-14T20:42:02.864+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n    s3_buckName=${s3_bucketName}\n    s3_source_dir=${s3_source_dir}\n    s3_target_dir=${s3_target_dir}\n    export AWS_ACCESS_KEY_ID="AKIAYJC6EOICLRQZHQDB"\n    export AWS_SECRET_ACCESS_KEY="***"\n    fileName=$(/home/***/.local/bin/aws s3 ls s3://${s3_buckName}/${s3_source_dir}/ --recursive|sort|tail -n 1 |awk \'{ print $4 }\' | awk -F "/" \'{print $NF}\')\n    timeStamp=$(echo $fileName | awk -F "_"  \'{ print $2}\')\n    /home/***/.local/bin/aws s3 cp   s3://${s3_buckName}/${s3_source_dir}/$fileName   s3://${s3_buckName}/${s3_target_dir}/${timeStamp}/\n    echo $timeStamp\n    ']
+[2023-08-14T20:42:02.890+0000] {subprocess.py:86} INFO - Output:
+[2023-08-14T20:42:05.654+0000] {subprocess.py:93} INFO - Completed 1.4 MiB/1.4 MiB (8.8 MiB/s) with 1 file(s) remainingcopy: s3://myawsbucket19080/hiveStep/raw/tripdata_20230814T204119_validated.csv to s3://myawsbucket19080/hiveStep/inputData/20230814T204119/tripdata_20230814T204119_validated.csv
+[2023-08-14T20:42:05.736+0000] {subprocess.py:93} INFO - 20230814T204119
+[2023-08-14T20:42:05.737+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-08-14T20:42:05.764+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=ny_taxi_Pipeline, task_id=copyFile, execution_date=20230814T204119, start_date=20230814T204202, end_date=20230814T204205
+[2023-08-14T20:42:05.833+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-08-14T20:42:05.868+0000] {taskinstance.py:2653} INFO - 1 downstream tasks scheduled from follow-on schedule check

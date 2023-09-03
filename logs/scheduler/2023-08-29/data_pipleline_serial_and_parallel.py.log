@@ -1,0 +1,812 @@
+[2023-08-29T07:44:10.765+0000] {processor.py:157} INFO - Started process (PID=46) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:44:10.776+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T07:44:10.781+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:44:10.781+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:44:10.857+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:44:11.016+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:44:11.016+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T07:44:11.215+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:44:11.211+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T06:00:00+00:00, run_after=2023-08-29T07:00:00+00:00
+[2023-08-29T07:44:11.326+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.575 seconds
+[2023-08-29T07:44:41.558+0000] {processor.py:157} INFO - Started process (PID=109) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:44:41.559+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T07:44:41.560+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:44:41.559+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:44:41.570+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:44:41.597+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:44:41.597+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T07:44:41.624+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:44:41.624+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T06:00:00+00:00, run_after=2023-08-29T07:00:00+00:00
+[2023-08-29T07:44:41.642+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.088 seconds
+[2023-08-29T07:45:11.684+0000] {processor.py:157} INFO - Started process (PID=173) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:45:11.686+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T07:45:11.686+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:45:11.686+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:45:11.697+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:45:11.723+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:45:11.723+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T07:45:11.749+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:45:11.749+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T06:00:00+00:00, run_after=2023-08-29T07:00:00+00:00
+[2023-08-29T07:45:11.766+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.086 seconds
+[2023-08-29T07:45:41.986+0000] {processor.py:157} INFO - Started process (PID=237) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:45:41.987+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T07:45:41.988+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:45:41.988+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:45:42.003+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:45:42.031+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:45:42.031+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T07:45:42.060+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:45:42.060+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T06:00:00+00:00, run_after=2023-08-29T07:00:00+00:00
+[2023-08-29T07:45:42.081+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.098 seconds
+[2023-08-29T07:46:12.879+0000] {processor.py:157} INFO - Started process (PID=301) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:46:12.880+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T07:46:12.881+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:46:12.881+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:46:12.892+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:46:12.905+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:46:12.905+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T07:46:12.933+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:46:12.933+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T06:00:00+00:00, run_after=2023-08-29T07:00:00+00:00
+[2023-08-29T07:46:12.951+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.076 seconds
+[2023-08-29T07:46:43.528+0000] {processor.py:157} INFO - Started process (PID=372) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:46:43.533+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T07:46:43.534+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:46:43.534+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:46:43.585+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:46:43.652+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:46:43.647+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T07:46:43.699+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:46:43.698+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T06:00:00+00:00, run_after=2023-08-29T07:00:00+00:00
+[2023-08-29T07:46:43.735+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.211 seconds
+[2023-08-29T07:47:13.870+0000] {processor.py:157} INFO - Started process (PID=436) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:47:13.871+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T07:47:13.872+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:47:13.871+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:47:13.884+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:47:13.915+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:47:13.915+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T07:47:13.942+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:47:13.942+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T06:00:00+00:00, run_after=2023-08-29T07:00:00+00:00
+[2023-08-29T07:47:13.960+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.094 seconds
+[2023-08-29T07:47:44.445+0000] {processor.py:157} INFO - Started process (PID=500) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:47:44.447+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T07:47:44.447+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:47:44.447+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:47:44.458+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:47:44.497+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:47:44.497+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T07:47:44.525+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:47:44.525+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T06:00:00+00:00, run_after=2023-08-29T07:00:00+00:00
+[2023-08-29T07:47:44.555+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.113 seconds
+[2023-08-29T07:48:14.863+0000] {processor.py:157} INFO - Started process (PID=571) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:48:14.864+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T07:48:14.865+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:48:14.864+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:48:14.875+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:48:14.901+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:48:14.901+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T07:48:14.929+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:48:14.929+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T06:00:00+00:00, run_after=2023-08-29T07:00:00+00:00
+[2023-08-29T07:48:14.946+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.087 seconds
+[2023-08-29T07:48:45.162+0000] {processor.py:157} INFO - Started process (PID=635) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:48:45.163+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T07:48:45.164+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:48:45.164+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:48:45.175+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:48:45.200+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:48:45.200+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T07:48:45.226+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:48:45.226+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T06:00:00+00:00, run_after=2023-08-29T07:00:00+00:00
+[2023-08-29T07:48:45.243+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.085 seconds
+[2023-08-29T07:49:15.369+0000] {processor.py:157} INFO - Started process (PID=699) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:49:15.370+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T07:49:15.371+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:49:15.370+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:49:15.382+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:49:15.407+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:49:15.406+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T07:49:15.433+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:49:15.433+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T06:00:00+00:00, run_after=2023-08-29T07:00:00+00:00
+[2023-08-29T07:49:15.450+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.084 seconds
+[2023-08-29T07:49:45.561+0000] {processor.py:157} INFO - Started process (PID=763) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:49:45.563+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T07:49:45.563+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:49:45.563+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:49:45.575+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:49:45.601+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:49:45.600+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T07:49:45.627+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:49:45.627+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T06:00:00+00:00, run_after=2023-08-29T07:00:00+00:00
+[2023-08-29T07:49:45.645+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.087 seconds
+[2023-08-29T07:50:16.172+0000] {processor.py:157} INFO - Started process (PID=834) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:50:16.173+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T07:50:16.174+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:50:16.173+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:50:16.185+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:50:16.211+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:50:16.211+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T07:50:16.238+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:50:16.237+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T06:00:00+00:00, run_after=2023-08-29T07:00:00+00:00
+[2023-08-29T07:50:16.255+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.087 seconds
+[2023-08-29T07:50:46.738+0000] {processor.py:157} INFO - Started process (PID=898) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:50:46.738+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T07:50:46.739+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:50:46.739+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:50:46.750+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:50:46.775+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:50:46.775+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T07:50:46.802+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:50:46.802+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T06:00:00+00:00, run_after=2023-08-29T07:00:00+00:00
+[2023-08-29T07:50:46.820+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.086 seconds
+[2023-08-29T07:51:17.241+0000] {processor.py:157} INFO - Started process (PID=963) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:51:17.242+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T07:51:17.243+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:51:17.243+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:51:17.254+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:51:17.280+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:51:17.279+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T07:51:17.306+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:51:17.306+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T06:00:00+00:00, run_after=2023-08-29T07:00:00+00:00
+[2023-08-29T07:51:17.323+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.086 seconds
+[2023-08-29T07:51:47.456+0000] {processor.py:157} INFO - Started process (PID=1037) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:51:47.456+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T07:51:47.457+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:51:47.457+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:51:47.470+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:51:47.578+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:51:47.578+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T07:51:47.650+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:51:47.650+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T06:00:00+00:00, run_after=2023-08-29T07:00:00+00:00
+[2023-08-29T07:51:47.667+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.228 seconds
+[2023-08-29T07:52:18.275+0000] {processor.py:157} INFO - Started process (PID=1101) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:52:18.276+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T07:52:18.277+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:52:18.277+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:52:18.288+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:52:18.312+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:52:18.312+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T07:52:18.338+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:52:18.338+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T06:00:00+00:00, run_after=2023-08-29T07:00:00+00:00
+[2023-08-29T07:52:18.355+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.083 seconds
+[2023-08-29T07:52:48.885+0000] {processor.py:157} INFO - Started process (PID=1166) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:52:48.886+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T07:52:48.887+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:52:48.886+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:52:48.898+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:52:48.923+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:52:48.923+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T07:52:48.951+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:52:48.951+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T06:00:00+00:00, run_after=2023-08-29T07:00:00+00:00
+[2023-08-29T07:52:48.970+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.089 seconds
+[2023-08-29T07:53:19.400+0000] {processor.py:157} INFO - Started process (PID=1230) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:53:19.401+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T07:53:19.402+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:53:19.402+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:53:19.414+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:53:19.439+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:53:19.439+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T07:53:19.467+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:53:19.467+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T06:00:00+00:00, run_after=2023-08-29T07:00:00+00:00
+[2023-08-29T07:53:19.485+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.089 seconds
+[2023-08-29T07:53:49.797+0000] {processor.py:157} INFO - Started process (PID=1304) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:53:49.798+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T07:53:49.799+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:53:49.799+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:53:49.810+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:53:49.835+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:53:49.835+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T07:53:49.862+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:53:49.861+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T06:00:00+00:00, run_after=2023-08-29T07:00:00+00:00
+[2023-08-29T07:53:49.879+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.086 seconds
+[2023-08-29T07:54:20.025+0000] {processor.py:157} INFO - Started process (PID=1370) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:54:20.026+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T07:54:20.027+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:54:20.027+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:54:20.038+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:54:20.063+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:54:20.063+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T07:54:20.090+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:54:20.090+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T06:00:00+00:00, run_after=2023-08-29T07:00:00+00:00
+[2023-08-29T07:54:20.108+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.087 seconds
+[2023-08-29T07:54:50.250+0000] {processor.py:157} INFO - Started process (PID=1434) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:54:50.251+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T07:54:50.252+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:54:50.251+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:54:50.263+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:54:50.288+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:54:50.288+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T07:54:50.315+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:54:50.314+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T06:00:00+00:00, run_after=2023-08-29T07:00:00+00:00
+[2023-08-29T07:54:50.333+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.087 seconds
+[2023-08-29T07:55:20.651+0000] {processor.py:157} INFO - Started process (PID=1503) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:55:20.652+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T07:55:20.652+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:55:20.652+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:55:20.684+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:55:20.729+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:55:20.728+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T07:55:20.782+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:55:20.782+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T06:00:00+00:00, run_after=2023-08-29T07:00:00+00:00
+[2023-08-29T07:55:20.813+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.166 seconds
+[2023-08-29T07:55:50.839+0000] {processor.py:157} INFO - Started process (PID=1569) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:55:50.841+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T07:55:50.842+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:55:50.841+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:55:50.853+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:55:50.877+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:55:50.877+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T07:55:50.905+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:55:50.905+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T06:00:00+00:00, run_after=2023-08-29T07:00:00+00:00
+[2023-08-29T07:55:50.923+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.087 seconds
+[2023-08-29T07:56:21.887+0000] {processor.py:157} INFO - Started process (PID=1631) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:56:21.889+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T07:56:21.890+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:56:21.889+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:56:21.900+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:56:21.925+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:56:21.925+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T07:56:21.952+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:56:21.952+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T06:00:00+00:00, run_after=2023-08-29T07:00:00+00:00
+[2023-08-29T07:56:21.970+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.086 seconds
+[2023-08-29T07:56:52.967+0000] {processor.py:157} INFO - Started process (PID=1702) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:56:52.968+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T07:56:52.974+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:56:52.973+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:56:52.985+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:56:53.010+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:56:53.010+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T07:56:53.036+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:56:53.036+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T06:00:00+00:00, run_after=2023-08-29T07:00:00+00:00
+[2023-08-29T07:56:53.053+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.089 seconds
+[2023-08-29T07:57:23.217+0000] {processor.py:157} INFO - Started process (PID=1767) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:57:23.218+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T07:57:23.219+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:57:23.219+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:57:23.230+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:57:23.254+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:57:23.254+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T07:57:23.280+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:57:23.280+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T06:00:00+00:00, run_after=2023-08-29T07:00:00+00:00
+[2023-08-29T07:57:23.298+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.084 seconds
+[2023-08-29T07:57:53.515+0000] {processor.py:157} INFO - Started process (PID=1832) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:57:53.515+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T07:57:53.516+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:57:53.516+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:57:53.535+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:57:53.576+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:57:53.576+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T07:57:53.604+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:57:53.604+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T06:00:00+00:00, run_after=2023-08-29T07:00:00+00:00
+[2023-08-29T07:57:53.620+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.115 seconds
+[2023-08-29T07:58:24.325+0000] {processor.py:157} INFO - Started process (PID=1896) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:58:24.327+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T07:58:24.327+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:58:24.327+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:58:24.338+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:58:24.362+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:58:24.362+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T07:58:24.389+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:58:24.389+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T06:00:00+00:00, run_after=2023-08-29T07:00:00+00:00
+[2023-08-29T07:58:24.406+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.084 seconds
+[2023-08-29T07:58:54.941+0000] {processor.py:157} INFO - Started process (PID=1967) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:58:54.942+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T07:58:54.943+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:58:54.942+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:58:54.961+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:58:55.002+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:58:55.002+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T07:58:55.028+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:58:55.028+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T06:00:00+00:00, run_after=2023-08-29T07:00:00+00:00
+[2023-08-29T07:58:55.046+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.108 seconds
+[2023-08-29T07:59:25.699+0000] {processor.py:157} INFO - Started process (PID=2032) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:59:25.700+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T07:59:25.701+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:59:25.700+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:59:25.711+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:59:25.735+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:59:25.735+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T07:59:25.761+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:59:25.761+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T06:00:00+00:00, run_after=2023-08-29T07:00:00+00:00
+[2023-08-29T07:59:25.778+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.083 seconds
+[2023-08-29T07:59:56.462+0000] {processor.py:157} INFO - Started process (PID=2097) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:59:56.463+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T07:59:56.464+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:59:56.464+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:59:56.476+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T07:59:56.510+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:59:56.510+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T07:59:56.544+0000] {logging_mixin.py:150} INFO - [2023-08-29T07:59:56.543+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T06:00:00+00:00, run_after=2023-08-29T07:00:00+00:00
+[2023-08-29T07:59:56.560+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.101 seconds
+[2023-08-29T08:00:27.391+0000] {processor.py:157} INFO - Started process (PID=2169) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:00:27.404+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:00:27.405+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:00:27.405+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:00:27.427+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:00:27.475+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:00:27.475+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:00:27.530+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:00:27.530+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T07:00:00+00:00, run_after=2023-08-29T08:00:00+00:00
+[2023-08-29T08:00:27.564+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.177 seconds
+[2023-08-29T08:00:57.883+0000] {processor.py:157} INFO - Started process (PID=2233) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:00:57.884+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:00:57.884+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:00:57.884+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:00:57.895+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:00:57.921+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:00:57.921+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:00:57.948+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:00:57.948+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T07:00:00+00:00, run_after=2023-08-29T08:00:00+00:00
+[2023-08-29T08:00:57.980+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.100 seconds
+[2023-08-29T08:01:28.594+0000] {processor.py:157} INFO - Started process (PID=2297) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:01:28.598+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:01:28.599+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:01:28.599+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:01:28.615+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:01:28.652+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:01:28.652+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:01:28.679+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:01:28.679+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T07:00:00+00:00, run_after=2023-08-29T08:00:00+00:00
+[2023-08-29T08:01:28.696+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.109 seconds
+[2023-08-29T08:01:59.411+0000] {processor.py:157} INFO - Started process (PID=2370) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:01:59.412+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:01:59.413+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:01:59.412+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:01:59.435+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:01:59.505+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:01:59.505+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:01:59.551+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:01:59.551+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T07:00:00+00:00, run_after=2023-08-29T08:00:00+00:00
+[2023-08-29T08:01:59.576+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.169 seconds
+[2023-08-29T08:02:30.543+0000] {processor.py:157} INFO - Started process (PID=2434) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:02:30.544+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:02:30.545+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:02:30.545+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:02:30.556+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:02:35.582+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:02:35.581+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:02:35.609+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:02:35.609+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T07:00:00+00:00, run_after=2023-08-29T08:00:00+00:00
+[2023-08-29T08:02:35.635+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 5.095 seconds
+[2023-08-29T08:03:05.731+0000] {processor.py:157} INFO - Started process (PID=2515) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:03:05.743+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:03:05.744+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:03:05.744+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:03:05.755+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:03:05.786+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:03:05.786+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:03:05.813+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:03:05.813+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T07:00:00+00:00, run_after=2023-08-29T08:00:00+00:00
+[2023-08-29T08:03:05.837+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.110 seconds
+[2023-08-29T08:03:36.144+0000] {processor.py:157} INFO - Started process (PID=2579) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:03:36.144+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:03:36.145+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:03:36.145+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:03:36.156+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:03:36.182+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:03:36.182+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:03:36.209+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:03:36.209+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T07:00:00+00:00, run_after=2023-08-29T08:00:00+00:00
+[2023-08-29T08:03:36.226+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.086 seconds
+[2023-08-29T08:04:06.805+0000] {processor.py:157} INFO - Started process (PID=2643) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:04:06.807+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:04:06.808+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:04:06.807+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:04:06.819+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:04:06.845+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:04:06.845+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:04:06.872+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:04:06.872+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T07:00:00+00:00, run_after=2023-08-29T08:00:00+00:00
+[2023-08-29T08:04:06.890+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.089 seconds
+[2023-08-29T08:04:37.040+0000] {processor.py:157} INFO - Started process (PID=2717) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:04:37.040+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:04:37.041+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:04:37.041+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:04:37.062+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:04:37.126+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:04:37.126+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:04:37.171+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:04:37.170+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T07:00:00+00:00, run_after=2023-08-29T08:00:00+00:00
+[2023-08-29T08:04:37.189+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.153 seconds
+[2023-08-29T08:05:07.800+0000] {processor.py:157} INFO - Started process (PID=2782) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:05:07.802+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:05:07.803+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:05:07.803+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:05:07.814+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:05:07.840+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:05:07.840+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:05:07.866+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:05:07.866+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T07:00:00+00:00, run_after=2023-08-29T08:00:00+00:00
+[2023-08-29T08:05:07.884+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.087 seconds
+[2023-08-29T08:05:38.152+0000] {processor.py:157} INFO - Started process (PID=2845) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:05:38.153+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:05:38.154+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:05:38.153+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:05:38.165+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:05:38.191+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:05:38.191+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:05:38.218+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:05:38.218+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T07:00:00+00:00, run_after=2023-08-29T08:00:00+00:00
+[2023-08-29T08:05:38.235+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.086 seconds
+[2023-08-29T08:06:08.479+0000] {processor.py:157} INFO - Started process (PID=2910) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:06:08.500+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:06:08.500+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:06:08.500+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:06:08.529+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:06:08.611+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:06:08.611+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:06:08.655+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:06:08.655+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T07:00:00+00:00, run_after=2023-08-29T08:00:00+00:00
+[2023-08-29T08:06:08.673+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.197 seconds
+[2023-08-29T08:06:38.838+0000] {processor.py:157} INFO - Started process (PID=2982) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:06:38.839+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:06:38.840+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:06:38.839+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:06:38.875+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:06:38.920+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:06:38.920+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:06:38.961+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:06:38.960+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T07:00:00+00:00, run_after=2023-08-29T08:00:00+00:00
+[2023-08-29T08:06:38.993+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.158 seconds
+[2023-08-29T08:07:09.138+0000] {processor.py:157} INFO - Started process (PID=3047) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:07:09.144+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:07:09.145+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:07:09.144+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:07:09.169+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:07:09.225+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:07:09.224+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:07:09.271+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:07:09.268+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T07:00:00+00:00, run_after=2023-08-29T08:00:00+00:00
+[2023-08-29T08:07:09.311+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.177 seconds
+[2023-08-29T08:07:39.744+0000] {processor.py:157} INFO - Started process (PID=3112) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:07:39.746+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:07:39.746+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:07:39.746+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:07:39.758+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:07:39.785+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:07:39.785+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:07:39.815+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:07:39.814+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T07:00:00+00:00, run_after=2023-08-29T08:00:00+00:00
+[2023-08-29T08:07:39.831+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.090 seconds
+[2023-08-29T08:08:10.648+0000] {processor.py:157} INFO - Started process (PID=3184) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:08:10.649+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:08:10.650+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:08:10.649+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:08:10.683+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:08:10.772+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:08:10.772+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:08:10.851+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:08:10.849+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T07:00:00+00:00, run_after=2023-08-29T08:00:00+00:00
+[2023-08-29T08:08:10.908+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.263 seconds
+[2023-08-29T08:08:41.038+0000] {processor.py:157} INFO - Started process (PID=3248) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:08:41.040+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:08:41.041+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:08:41.040+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:08:41.052+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:08:41.080+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:08:41.080+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:08:41.148+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:08:41.148+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T07:00:00+00:00, run_after=2023-08-29T08:00:00+00:00
+[2023-08-29T08:08:41.168+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.133 seconds
+[2023-08-29T08:09:12.001+0000] {processor.py:157} INFO - Started process (PID=3313) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:09:12.002+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:09:12.002+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:09:12.002+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:09:12.024+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:09:12.109+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:09:12.108+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:09:12.135+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:09:12.135+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T07:00:00+00:00, run_after=2023-08-29T08:00:00+00:00
+[2023-08-29T08:09:12.159+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.161 seconds
+[2023-08-29T08:09:42.553+0000] {processor.py:157} INFO - Started process (PID=3385) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:09:42.554+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:09:42.555+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:09:42.555+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:09:42.577+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:09:42.635+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:09:42.634+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:09:42.671+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:09:42.671+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T07:00:00+00:00, run_after=2023-08-29T08:00:00+00:00
+[2023-08-29T08:09:42.688+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.146 seconds
+[2023-08-29T08:10:13.018+0000] {processor.py:157} INFO - Started process (PID=3449) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:10:13.024+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:10:13.025+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:10:13.025+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:10:13.047+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:10:13.093+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:10:13.093+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:10:13.121+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:10:13.121+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T07:00:00+00:00, run_after=2023-08-29T08:00:00+00:00
+[2023-08-29T08:10:13.142+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.128 seconds
+[2023-08-29T08:10:43.553+0000] {processor.py:157} INFO - Started process (PID=3513) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:10:43.555+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:10:43.556+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:10:43.555+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:10:43.567+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:10:43.595+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:10:43.595+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:10:43.622+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:10:43.622+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T07:00:00+00:00, run_after=2023-08-29T08:00:00+00:00
+[2023-08-29T08:10:43.639+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.089 seconds
+[2023-08-29T08:11:14.571+0000] {processor.py:157} INFO - Started process (PID=3582) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:11:14.571+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:11:14.572+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:11:14.572+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:11:14.602+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:11:14.745+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:11:14.745+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:11:14.807+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:11:14.807+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:11:14.847+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.279 seconds
+[2023-08-29T08:11:45.280+0000] {processor.py:157} INFO - Started process (PID=3648) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:11:45.284+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:11:45.285+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:11:45.284+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:11:45.309+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:11:45.394+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:11:45.393+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:11:45.491+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:11:45.491+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:11:45.590+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.314 seconds
+[2023-08-29T08:12:16.595+0000] {processor.py:157} INFO - Started process (PID=3710) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:12:16.603+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:12:16.604+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:12:16.603+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:12:16.630+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:12:16.675+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:12:16.674+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:12:16.728+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:12:16.728+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:12:16.769+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.178 seconds
+[2023-08-29T08:12:47.189+0000] {processor.py:157} INFO - Started process (PID=3775) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:12:47.190+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:12:47.191+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:12:47.190+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:12:47.202+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:12:47.236+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:12:47.235+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:12:47.262+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:12:47.262+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:12:47.279+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.094 seconds
+[2023-08-29T08:13:17.611+0000] {processor.py:157} INFO - Started process (PID=3845) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:13:17.612+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:13:17.612+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:13:17.612+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:13:17.633+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:13:17.768+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:13:17.768+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:13:17.837+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:13:17.837+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:13:17.885+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.278 seconds
+[2023-08-29T08:13:48.543+0000] {processor.py:157} INFO - Started process (PID=3909) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:13:48.544+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:13:48.545+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:13:48.545+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:13:48.557+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:13:48.583+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:13:48.583+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:13:48.612+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:13:48.612+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:13:48.631+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.091 seconds
+[2023-08-29T08:14:18.893+0000] {processor.py:157} INFO - Started process (PID=3973) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:14:18.894+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:14:18.895+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:14:18.895+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:14:18.917+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:14:18.980+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:14:18.979+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:14:19.027+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:14:19.027+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:14:19.073+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.191 seconds
+[2023-08-29T08:14:49.203+0000] {processor.py:157} INFO - Started process (PID=4044) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:14:49.204+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:14:49.205+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:14:49.204+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:14:49.226+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:14:49.277+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:14:49.277+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:14:49.336+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:14:49.335+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:14:49.366+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.175 seconds
+[2023-08-29T08:15:19.654+0000] {processor.py:157} INFO - Started process (PID=4109) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:15:19.665+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:15:19.665+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:15:19.665+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:15:19.689+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:15:19.743+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:15:19.743+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:15:19.792+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:15:19.791+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:15:19.836+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.186 seconds
+[2023-08-29T08:15:49.889+0000] {processor.py:157} INFO - Started process (PID=4174) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:15:49.890+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:15:49.891+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:15:49.891+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:15:49.902+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:15:49.929+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:15:49.929+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:15:49.956+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:15:49.956+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:15:49.973+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.088 seconds
+[2023-08-29T08:16:20.090+0000] {processor.py:157} INFO - Started process (PID=4237) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:16:20.091+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:16:20.092+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:16:20.091+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:16:20.103+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:16:20.134+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:16:20.134+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:16:20.161+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:16:20.160+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:16:20.179+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.093 seconds
+[2023-08-29T08:16:50.242+0000] {processor.py:157} INFO - Started process (PID=4309) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:16:50.243+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:16:50.244+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:16:50.244+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:16:50.275+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:16:50.315+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:16:50.314+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:16:50.364+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:16:50.364+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:16:50.401+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.162 seconds
+[2023-08-29T08:17:20.594+0000] {processor.py:157} INFO - Started process (PID=4373) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:17:20.596+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:17:20.597+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:17:20.596+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:17:20.608+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:17:20.635+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:17:20.635+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:17:20.666+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:17:20.666+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:17:20.682+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.092 seconds
+[2023-08-29T08:17:37.750+0000] {processor.py:157} INFO - Started process (PID=4406) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:17:37.751+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:17:37.752+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:17:37.752+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:17:37.767+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:17:37.925+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:17:37.925+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:17:37.949+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:17:37.949+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:17:37.970+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.223 seconds
+[2023-08-29T08:18:08.231+0000] {processor.py:157} INFO - Started process (PID=4473) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:18:08.248+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:18:08.249+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:18:08.248+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:18:08.260+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:18:08.326+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:18:08.326+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:18:08.403+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:18:08.403+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:18:08.445+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.218 seconds
+[2023-08-29T08:18:38.490+0000] {processor.py:157} INFO - Started process (PID=4537) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:18:38.493+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:18:38.493+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:18:38.493+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:18:38.507+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:18:38.533+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:18:38.533+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:18:38.559+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:18:38.559+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:18:38.577+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.091 seconds
+[2023-08-29T08:19:09.029+0000] {processor.py:157} INFO - Started process (PID=4602) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:19:09.029+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:19:09.030+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:19:09.030+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:19:09.041+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:19:09.066+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:19:09.066+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:19:09.093+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:19:09.093+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:19:09.110+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.085 seconds
+[2023-08-29T08:19:39.827+0000] {processor.py:157} INFO - Started process (PID=4666) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:19:39.828+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:19:39.829+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:19:39.828+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:19:39.840+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:19:39.866+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:19:39.866+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:19:39.892+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:19:39.892+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:19:39.909+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.086 seconds
+[2023-08-29T08:20:10.135+0000] {processor.py:157} INFO - Started process (PID=4738) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:20:10.135+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:20:10.136+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:20:10.136+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:20:10.150+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:20:10.175+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:20:10.174+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:20:10.201+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:20:10.201+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:20:10.219+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.087 seconds
+[2023-08-29T08:20:40.969+0000] {processor.py:157} INFO - Started process (PID=4803) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:20:40.970+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:20:40.971+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:20:40.971+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:20:40.982+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:20:41.007+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:20:41.007+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:20:41.034+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:20:41.034+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:20:41.052+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.086 seconds
+[2023-08-29T08:21:11.760+0000] {processor.py:157} INFO - Started process (PID=4867) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:21:11.761+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:21:11.762+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:21:11.762+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:21:11.773+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:21:11.797+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:21:11.796+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:21:11.823+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:21:11.823+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:21:11.840+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.083 seconds
+[2023-08-29T08:21:41.882+0000] {processor.py:157} INFO - Started process (PID=4932) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:21:41.883+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:21:41.884+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:21:41.883+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:21:41.894+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:21:41.923+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:21:41.923+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:21:41.957+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:21:41.957+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:21:41.975+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.097 seconds
+[2023-08-29T08:22:12.312+0000] {processor.py:157} INFO - Started process (PID=5002) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:22:12.313+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:22:12.313+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:22:12.313+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:22:12.325+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:22:12.348+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:22:12.348+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:22:12.375+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:22:12.375+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:22:12.392+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.084 seconds
+[2023-08-29T08:22:42.625+0000] {processor.py:157} INFO - Started process (PID=5066) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:22:42.627+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:22:42.627+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:22:42.627+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:22:42.639+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:22:42.670+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:22:42.670+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:22:42.697+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:22:42.696+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:22:42.714+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.092 seconds
+[2023-08-29T08:23:12.847+0000] {processor.py:157} INFO - Started process (PID=5132) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:23:12.848+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:23:12.848+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:23:12.848+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:23:12.859+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:23:12.884+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:23:12.884+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:23:12.912+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:23:12.911+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:23:12.931+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.087 seconds
+[2023-08-29T08:23:43.792+0000] {processor.py:157} INFO - Started process (PID=5203) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:23:43.793+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:23:43.794+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:23:43.794+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:23:43.805+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:23:43.849+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:23:43.849+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:23:43.880+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:23:43.880+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:23:43.898+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.110 seconds
+[2023-08-29T08:24:14.306+0000] {processor.py:157} INFO - Started process (PID=5268) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:24:14.307+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:24:14.308+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:24:14.307+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:24:14.319+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:24:14.343+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:24:14.343+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:24:14.370+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:24:14.369+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:24:14.387+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.084 seconds
+[2023-08-29T08:24:44.624+0000] {processor.py:157} INFO - Started process (PID=5332) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:24:44.625+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:24:44.626+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:24:44.625+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:24:44.637+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:24:44.666+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:24:44.666+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:24:44.692+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:24:44.692+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:24:44.711+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.091 seconds
+[2023-08-29T08:25:15.344+0000] {processor.py:157} INFO - Started process (PID=5403) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:25:15.344+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:25:15.345+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:25:15.345+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:25:15.356+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:25:15.381+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:25:15.381+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:25:15.412+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:25:15.411+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:25:15.428+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.089 seconds
+[2023-08-29T08:25:46.180+0000] {processor.py:157} INFO - Started process (PID=5467) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:25:46.182+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:25:46.183+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:25:46.182+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:25:46.194+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:25:46.219+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:25:46.219+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:25:46.246+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:25:46.246+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:25:46.264+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.087 seconds
+[2023-08-29T08:26:17.058+0000] {processor.py:157} INFO - Started process (PID=5531) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:26:17.060+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:26:17.061+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:26:17.060+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:26:17.072+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:26:17.097+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:26:17.097+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:26:17.123+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:26:17.123+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:26:17.141+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.086 seconds
+[2023-08-29T08:26:47.610+0000] {processor.py:157} INFO - Started process (PID=5595) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:26:47.611+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:26:47.612+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:26:47.612+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:26:47.623+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:26:47.655+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:26:47.655+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:26:47.681+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:26:47.681+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:26:47.699+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.093 seconds
+[2023-08-29T08:27:18.016+0000] {processor.py:157} INFO - Started process (PID=5666) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:27:18.018+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:27:18.018+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:27:18.018+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:27:18.029+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:27:18.054+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:27:18.054+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:27:18.081+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:27:18.081+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:27:18.098+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.086 seconds
+[2023-08-29T08:27:48.384+0000] {processor.py:157} INFO - Started process (PID=5731) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:27:48.384+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:27:48.385+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:27:48.385+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:27:48.396+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:27:48.423+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:27:48.423+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:27:48.450+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:27:48.450+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:27:48.469+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.089 seconds
+[2023-08-29T08:28:19.124+0000] {processor.py:157} INFO - Started process (PID=5797) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:28:19.126+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:28:19.126+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:28:19.126+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:28:19.138+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:28:19.163+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:28:19.163+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:28:19.201+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:28:19.201+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:28:19.229+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.108 seconds
+[2023-08-29T08:28:49.867+0000] {processor.py:157} INFO - Started process (PID=5869) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:28:49.867+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:28:49.868+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:28:49.868+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:28:49.880+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:28:49.907+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:28:49.907+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:28:49.939+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:28:49.939+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:28:49.957+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.094 seconds
+[2023-08-29T08:29:20.794+0000] {processor.py:157} INFO - Started process (PID=5932) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:29:20.796+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:29:20.796+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:29:20.796+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:29:20.807+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:29:20.832+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:29:20.832+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:29:20.868+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:29:20.868+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:29:20.889+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.098 seconds
+[2023-08-29T08:29:51.739+0000] {processor.py:157} INFO - Started process (PID=5997) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:29:51.739+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:29:51.740+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:29:51.740+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:29:51.751+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:29:51.776+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:29:51.776+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:29:51.802+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:29:51.802+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:29:51.820+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.085 seconds
+[2023-08-29T08:30:22.079+0000] {processor.py:157} INFO - Started process (PID=6069) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:30:22.084+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:30:22.085+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:30:22.085+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:30:22.109+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:30:22.134+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:30:22.134+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:30:22.161+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:30:22.160+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:30:22.178+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.102 seconds
+[2023-08-29T08:30:52.998+0000] {processor.py:157} INFO - Started process (PID=6132) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:30:52.999+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:30:53.000+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:30:53.000+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:30:53.011+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:30:53.037+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:30:53.037+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:30:53.064+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:30:53.063+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:30:53.081+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.087 seconds
+[2023-08-29T08:31:23.396+0000] {processor.py:157} INFO - Started process (PID=6196) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:31:23.398+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:31:23.399+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:31:23.399+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:31:23.410+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:31:23.435+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:31:23.434+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:31:23.461+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:31:23.461+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:31:23.478+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.085 seconds
+[2023-08-29T08:31:53.913+0000] {processor.py:157} INFO - Started process (PID=6267) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:31:53.914+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:31:53.915+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:31:53.914+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:31:53.926+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:31:53.957+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:31:53.956+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:31:53.983+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:31:53.983+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:31:54.001+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.092 seconds
+[2023-08-29T08:32:24.252+0000] {processor.py:157} INFO - Started process (PID=6332) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:32:24.253+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:32:24.254+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:32:24.253+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:32:24.264+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:32:24.290+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:32:24.290+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:32:24.316+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:32:24.316+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:32:24.333+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.085 seconds
+[2023-08-29T08:32:54.465+0000] {processor.py:157} INFO - Started process (PID=6396) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:32:54.465+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:32:54.466+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:32:54.466+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:32:54.477+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:32:54.503+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:32:54.502+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:32:54.530+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:32:54.530+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:32:54.548+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.087 seconds
+[2023-08-29T08:33:24.725+0000] {processor.py:157} INFO - Started process (PID=6460) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:33:24.727+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:33:24.728+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:33:24.728+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:33:24.739+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:33:24.764+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:33:24.764+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:33:24.792+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:33:24.792+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:33:24.811+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.089 seconds
+[2023-08-29T08:33:54.977+0000] {processor.py:157} INFO - Started process (PID=6532) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:33:54.978+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:33:54.978+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:33:54.978+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:33:54.989+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:33:55.014+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:33:55.014+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:33:55.041+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:33:55.041+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:33:55.058+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.085 seconds
+[2023-08-29T08:34:25.273+0000] {processor.py:157} INFO - Started process (PID=6597) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:34:25.274+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:34:25.275+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:34:25.275+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:34:25.286+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:34:25.314+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:34:25.314+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:34:25.340+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:34:25.340+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:34:25.357+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.088 seconds
+[2023-08-29T08:34:55.571+0000] {processor.py:157} INFO - Started process (PID=6662) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:34:55.572+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:34:55.573+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:34:55.572+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:34:55.584+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:34:55.610+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:34:55.610+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:34:55.642+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:34:55.641+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:34:55.658+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.091 seconds
+[2023-08-29T08:35:25.792+0000] {processor.py:157} INFO - Started process (PID=6734) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:35:25.793+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:35:25.794+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:35:25.794+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:35:25.805+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:35:25.830+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:35:25.830+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:35:25.861+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:35:25.861+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:35:25.880+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.091 seconds
+[2023-08-29T08:35:56.049+0000] {processor.py:157} INFO - Started process (PID=6800) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:35:56.050+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:35:56.051+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:35:56.051+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:35:56.063+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:35:56.088+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:35:56.088+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:35:56.114+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:35:56.114+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:35:56.136+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.090 seconds
+[2023-08-29T08:36:26.211+0000] {processor.py:157} INFO - Started process (PID=6865) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:36:26.213+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:36:26.214+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:36:26.214+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:36:26.225+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:36:26.250+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:36:26.250+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:36:26.276+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:36:26.276+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:36:26.293+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.085 seconds
+[2023-08-29T08:36:56.583+0000] {processor.py:157} INFO - Started process (PID=6930) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:36:56.584+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:36:56.585+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:36:56.584+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:36:56.596+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:36:56.622+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:36:56.621+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:36:56.649+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:36:56.649+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:36:56.668+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.088 seconds
+[2023-08-29T08:37:26.947+0000] {processor.py:157} INFO - Started process (PID=7001) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:37:26.948+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:37:26.949+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:37:26.949+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:37:26.961+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:37:26.986+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:37:26.985+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:37:27.012+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:37:27.012+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:37:27.029+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.086 seconds
+[2023-08-29T08:37:57.157+0000] {processor.py:157} INFO - Started process (PID=7066) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:37:57.158+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:37:57.159+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:37:57.158+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:37:57.170+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:37:57.195+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:37:57.195+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:37:57.222+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:37:57.222+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:37:57.240+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.086 seconds
+[2023-08-29T08:38:27.399+0000] {processor.py:157} INFO - Started process (PID=7130) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:38:27.400+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:38:27.401+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:38:27.400+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:38:27.412+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:38:27.437+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:38:27.436+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:38:27.462+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:38:27.462+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:38:27.479+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.084 seconds
+[2023-08-29T08:38:57.741+0000] {processor.py:157} INFO - Started process (PID=7200) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:38:57.741+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:38:57.754+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:38:57.754+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:38:57.778+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:38:57.825+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:38:57.824+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:38:57.877+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:38:57.877+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:38:57.916+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.179 seconds
+[2023-08-29T08:39:28.151+0000] {processor.py:157} INFO - Started process (PID=7265) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:39:28.152+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:39:28.153+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:39:28.152+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:39:28.164+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:39:28.189+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:39:28.189+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:39:28.216+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:39:28.216+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:39:28.234+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.087 seconds
+[2023-08-29T08:39:58.599+0000] {processor.py:157} INFO - Started process (PID=7329) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:39:58.600+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:39:58.601+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:39:58.601+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:39:58.611+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:39:58.635+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:39:58.635+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:39:58.661+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:39:58.661+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:39:58.679+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.083 seconds
+[2023-08-29T08:40:28.778+0000] {processor.py:157} INFO - Started process (PID=7394) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:40:28.779+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:40:28.780+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:40:28.780+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:40:28.791+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:40:28.815+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:40:28.815+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:40:28.841+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:40:28.841+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:40:28.858+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.084 seconds
+[2023-08-29T08:40:59.169+0000] {processor.py:157} INFO - Started process (PID=7466) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:40:59.171+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:40:59.172+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:40:59.171+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:40:59.183+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:40:59.207+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:40:59.207+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:40:59.235+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:40:59.235+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:40:59.254+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.090 seconds
+[2023-08-29T08:41:29.902+0000] {processor.py:157} INFO - Started process (PID=7531) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:41:29.903+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:41:29.904+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:41:29.903+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:41:29.915+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:41:29.939+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:41:29.939+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:41:29.966+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:41:29.966+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:41:29.984+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.086 seconds
+[2023-08-29T08:42:00.418+0000] {processor.py:157} INFO - Started process (PID=7595) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:42:00.419+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:42:00.420+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:42:00.419+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:42:00.431+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:42:00.462+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:42:00.461+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:42:00.488+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:42:00.488+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:42:00.505+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.091 seconds
+[2023-08-29T08:42:30.768+0000] {processor.py:157} INFO - Started process (PID=7667) to work on /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:42:30.769+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipleline_serial_and_parallel.py for tasks to queue
+[2023-08-29T08:42:30.770+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:42:30.770+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:42:30.781+0000] {processor.py:836} INFO - DAG(s) dict_keys(['serial_parallel_data_pipeline']) retrieved from /opt/airflow/dags/data_pipleline_serial_and_parallel.py
+[2023-08-29T08:42:30.806+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:42:30.806+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-29T08:42:30.833+0000] {logging_mixin.py:150} INFO - [2023-08-29T08:42:30.833+0000] {dag.py:3504} INFO - Setting next_dagrun for serial_parallel_data_pipeline to 2023-08-29T08:00:00+00:00, run_after=2023-08-29T09:00:00+00:00
+[2023-08-29T08:42:30.851+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipleline_serial_and_parallel.py took 0.085 seconds

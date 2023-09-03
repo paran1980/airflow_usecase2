@@ -1,0 +1,19 @@
+[2023-08-27T11:52:59.716+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: serial_parallel_data_pipeline.S3 manual__2023-08-27T11:51:41+00:00 [queued]>
+[2023-08-27T11:52:59.725+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: serial_parallel_data_pipeline.S3 manual__2023-08-27T11:51:41+00:00 [queued]>
+[2023-08-27T11:52:59.726+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-08-27T11:52:59.739+0000] {taskinstance.py:1327} INFO - Executing <Task(BashOperator): S3> on 2023-08-27 11:51:41+00:00
+[2023-08-27T11:52:59.746+0000] {standard_task_runner.py:57} INFO - Started process 835 to run task
+[2023-08-27T11:52:59.750+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'serial_parallel_data_pipeline', 'S3', 'manual__2023-08-27T11:51:41+00:00', '--job-id', '1798', '--raw', '--subdir', 'DAGS_FOLDER/data_pipleline_serial_and_parallel.py', '--cfg-path', '/tmp/tmp9ntvw3bc']
+[2023-08-27T11:52:59.753+0000] {standard_task_runner.py:85} INFO - Job 1798: Subtask S3
+[2023-08-27T11:52:59.766+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2023-08-27T11:52:59.809+0000] {task_command.py:410} INFO - Running <TaskInstance: serial_parallel_data_pipeline.S3 manual__2023-08-27T11:51:41+00:00 [running]> on host d4028c5ba2ac
+[2023-08-27T11:52:59.893+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='serial_parallel_data_pipeline' AIRFLOW_CTX_TASK_ID='S3' AIRFLOW_CTX_EXECUTION_DATE='2023-08-27T11:51:41+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-08-27T11:51:41+00:00'
+[2023-08-27T11:52:59.895+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2023-08-27T11:52:59.896+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'sleep 10']
+[2023-08-27T11:52:59.908+0000] {subprocess.py:86} INFO - Output:
+[2023-08-27T11:53:09.913+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-08-27T11:53:09.942+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=serial_parallel_data_pipeline, task_id=S3, execution_date=20230827T115141, start_date=20230827T115259, end_date=20230827T115309
+[2023-08-27T11:53:09.964+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-08-27T11:53:09.981+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check
